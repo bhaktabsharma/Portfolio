@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhakta Sharma | Resume</title>
+<meta name="description" content="Resume of Bhakta Sharma, an aspiring penetration tester and cybersecurity researcher studying Computer Science and Engineering.">
+<meta name="theme-color" content="#1A1818">
+<link rel="canonical" href="https://bhaktabsharma.github.io/Portfolio/resume.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Onest"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("assets/fonts/onest-latin-wght-normal.woff2") format("woff2"); }
+:root { --charcoal:#1A1818; --ink:#050404; --ivory:#E8E4E0; --gold:#D6B26E; --gold-ink:#7A5C1E; --wine:#6B4F4F; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: "Onest", Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.55; color: var(--charcoal); background: var(--charcoal); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
+.bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding: .8rem clamp(1rem, 4vw, 2rem); background: rgba(18,15,15,.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(232,228,224,.12); }
+.bar__brand { margin-right: auto; font-weight: 700; letter-spacing: .2em; font-size: .8rem; color: var(--ivory); text-decoration: none; }
+.bar__brand span { color: var(--gold); }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1rem; border-radius: 999px; border: 1px solid rgba(232,228,224,.3); color: var(--ivory); font: 600 .85rem/1 inherit; text-decoration: none; background: none; cursor: pointer; font-family: inherit; }
+.btn:hover { border-color: var(--gold); color: var(--gold); }
+.btn--gold { background: var(--gold); color: var(--charcoal); border-color: var(--gold); }
+.btn--gold:hover { color: var(--charcoal); background: #E4C384; }
+@media (max-width: 640px) { .bar { position: static; } .bar__brand { width: 100%; } }
+.sheet { max-width: 860px; margin: clamp(1rem, 4vw, 2.5rem) auto; padding: clamp(1.4rem, 5vw, 3rem); background: #F6F3EE; border-radius: 6px; box-shadow: 0 30px 60px -30px rgba(0,0,0,.8); }
+header.cv { padding-bottom: 1.2rem; border-bottom: 3px solid var(--charcoal); margin-bottom: 1.4rem; }
+h1 { margin: 0; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.05; letter-spacing: -.03em; }
+.role { margin: .4rem 0 .9rem; font-size: 1.05rem; font-weight: 500; color: var(--gold-ink); }
+.contact { display: flex; flex-wrap: wrap; gap: .25rem 1.2rem; margin: 0; padding: 0; list-style: none; font-size: .88rem; }
+h2 { margin: 1.7rem 0 .7rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(26,24,24,.28); font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); }
+h3 { margin: 0; font-size: 1rem; line-height: 1.35; font-weight: 600; }
+p { margin: .2rem 0 0; }
+.entry { margin-bottom: .95rem; break-inside: avoid; }
+.org { font-weight: 500; }
+.meta { font-size: .88rem; color: rgba(26,24,24,.78); }
+.url { font-weight: 400; font-size: .82rem; color: rgba(26,24,24,.7); margin-left: .4rem; overflow-wrap: anywhere; }
+.skill { margin-bottom: .55rem; break-inside: avoid; }
+.skill h3 { display: inline; font-size: .95rem; }
+.skill p { display: inline; margin: 0 0 0 .3rem; }
+.skill p::before { content: "— "; }
+ul.plain { margin: .2rem 0 0; padding-left: 1.2rem; }
+ul.plain li { margin-bottom: .3rem; }
+.note { font-size: .84rem; color: rgba(26,24,24,.72); margin-top: .5rem; }
+.updated { margin-top: 1.8rem; font-size: .8rem; color: rgba(26,24,24,.6); }
+@page { size: A4; margin: 12mm 14mm; }
+@media print {
+  body { font-family: Arial, Helvetica, "Liberation Sans", sans-serif; background: #fff; font-size: 9.6pt; line-height: 1.36; color: #000; }
+  .bar, .updated { display: none; }
+  .sheet { margin: 0; padding: 0; max-width: none; box-shadow: none; background: #fff; border-radius: 0; }
+  header.cv { border-bottom-color: #000; }
+  h1 { font-size: 24pt; }
+  .role { color: #000; }
+  h2 { color: #000; border-bottom-color: #000; margin: 10pt 0 5pt; letter-spacing: 0; font-size: 9.6pt; }
+  .entry { margin-bottom: 6pt; }
+  .skill { margin-bottom: 3pt; }
+  h3 { font-size: 10pt; }
+  .role { margin: 2pt 0 6pt; }
+  header.cv { padding-bottom: 8pt; margin-bottom: 8pt; }
+  .meta, .url, .note { color: #222; }
+  a { text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="bar__brand" href="./" aria-label="Back to the portfolio">BHAKTA<span>SEC</span></a>
+  <a class="btn" href="./">← Portfolio</a>
+  <a class="btn btn--gold" href="assets/Bhakta-Sharma-Resume.pdf" download="Bhakta-Sharma-Resume.pdf">Download PDF</a>
+  <a class="btn" href="assets/Bhakta-Sharma-Resume.txt" download="Bhakta-Sharma-Resume.txt">Plain text (ATS)</a>
+  <button class="btn" type="button" onclick="window.print()">Print</button>
+</div>
+<main class="sheet" id="main">
+  <header class="cv">
+    <h1>Bhakta Sharma</h1>
+    <p class="role">Aspiring Penetration Tester · Cybersecurity Researcher</p>
+    <ul class="contact"><li>Siliguri, West Bengal, India</li><li><a href="mailto:bhaktabsharma@gmail.com">bhaktabsharma@gmail.com</a></li><li><a href="https://bhaktabsharma.github.io/Portfolio/">bhaktabsharma.github.io/Portfolio</a></li><li><a href="https://www.linkedin.com/in/bhaktabsharma/">linkedin.com/in/bhaktabsharma</a></li><li><a href="https://github.com/bhaktabsharma">github.com/bhaktabsharma</a></li><li><a href="https://tryhackme.com/p/bhaktabsharma">tryhackme.com/p/bhaktabsharma</a></li></ul>
+  </header>
+
+  <section aria-labelledby="h-sum"><h2 id="h-sum">Professional summary</h2><p>Computer Science and Engineering student and aspiring cybersecurity researcher focused on web application security, penetration testing, bug bounty reconnaissance and digital forensics. Builds security tools and practice labs, documents TryHackMe challenges as writeups, and is working toward the EC-Council CEH v12 and CHFI certifications. Open to cybersecurity opportunities, security research and meaningful collaborations.</p></section>
+
+  <section aria-labelledby="h-edu"><h2 id="h-edu">Education</h2>
+    <div class="entry"><h3>Bachelor of Technology (B.Tech), Computer Science and Engineering</h3><p class="org">Alipurduar Government Engineering and Management College (AGEMC)</p><p class="meta">Pursuing · currently in the 3rd semester (November 2026)</p></div><!-- EDIT: add expected graduation year to the B.Tech entry above -->
+    <div class="entry"><h3>Diploma in Civil Engineering</h3><p class="meta">2021 – 2024</p></div><!-- EDIT: add the diploma institution name to the entry above -->
+    <div class="entry"><h3>Cybersecurity self-study</h3><p class="org">TryHackMe, EC-Council study material, NVH Digital Forensic program</p><p class="meta">2023 – Present</p></div>
+  </section>
+
+  <section aria-labelledby="h-skills"><h2 id="h-skills">Cybersecurity skills and tools</h2>
+    <div class="skill"><h3>Web application security</h3><p>Injection, XSS, access control and authentication flaws studied in local labs. Burp Suite, OWASP ZAP, SQLMap, Nikto, Gobuster.</p></div><div class="skill"><h3>Reconnaissance and enumeration</h3><p>Subdomain, live host, port, URL, JavaScript endpoint and parameter discovery. Nmap, Recon-ng, Maltego, subfinder, httpx, katana, ffuf, nuclei.</p></div><div class="skill"><h3>Penetration testing (lab environments)</h3><p>Windows exploitation, Active Directory attacks and Linux privilege escalation on TryHackMe. Metasploit, Hydra, John the Ripper, Hashcat, BloodHound, Mimikatz, Kali Linux.</p></div><div class="skill"><h3>Digital forensics</h3><p>Evidence handling, memory, disk and network analysis. Autopsy, Volatility 3, FTK Imager, Wireshark.</p></div><div class="skill"><h3>Malware analysis (static triage)</h3><p>Ghidra, YARA, pefile.</p></div><div class="skill"><h3>Network monitoring and defence</h3><p>Wireshark, Snort, Splunk, Aircrack-ng.</p></div><div class="skill"><h3>Programming and automation</h3><p>Python, Bash, JavaScript, TypeScript.</p></div>
+    <p class="note">Tools listed are those used or studied in labs, TryHackMe rooms and personal projects. No proficiency ratings are claimed.</p>
+  </section>
+
+  <section aria-labelledby="h-proj"><h2 id="h-proj">Personal projects</h2>
+    <div class="entry"><h3>Bug Bounty Recon Engine <span class="url">github.com/bhaktabsharma/BugBounty-Recon-Engine</span></h3><p>Automates the first mile of a bug bounty engagement — turns a domain into a structured attack-surface map in one self-contained, checkpointed Bash script that can be safely killed and resumed.</p><p class="meta">Stack: Bash, subfinder, httpx, nmap, katana, ffuf, nuclei</p></div><div class="entry"><h3>Automated Recon &amp; Enumeration Toolkit v2.0 <span class="url">github.com/bhaktabsharma/ReconForge</span></h3><p>Modular recon framework for authorised testing and lab practice.</p><p class="meta">Stack: Python 3.8+, DNS Enum, Port Scanner, Subdomain BF, HTML Report</p></div><div class="entry"><h3>SQL Injection Practice Lab <span class="url">github.com/bhaktabsharma/SQL-INJECTION-LAB</span></h3><p>A full-stack SQL injection playground for repeatable local practice.</p><p class="meta">Stack: React, TypeScript, Vite, Node.js / Express, SQLite</p></div><div class="entry"><h3>Faultline — Local Web Hacking Lab <span class="url">github.com/bhaktabsharma/Faultline-Web-Security-Labs</span></h3><p>36 hands-on web application vulnerability labs across three difficulty tiers.</p><p class="meta">Stack: Node.js, Express, JavaScript, Local-only</p></div><div class="entry"><h3>ReconQL — Dorking &amp; Recon Search Engine <span class="url">github.com/bhaktabsharma/ReconQL-Passive-Recon-Console</span></h3><p>A Google-dorking recon search engine for bug bounty hunting, covering subdomain enumeration, API discovery, parameter discovery, exposed files, and login panels.</p><p class="meta">Stack: JavaScript, Google Dorking, GitHub Pages</p></div><div class="entry"><h3>Crawlspace — Attack Surface Discovery <span class="url">github.com/bhaktabsharma/Crawlspace-Attack-Surface</span></h3><p>An attack-surface discovery taxonomy and query generator, built as a recon checklist so nothing gets missed while scoping a target.</p><p class="meta">Stack: HTML5, JavaScript, Static Site</p></div><div class="entry"><h3>CaseFile — Personal Security Wiki <span class="url">github.com/bhaktabsharma/CaseFile</span></h3><p>A personal security knowledgebase covering techniques, tools, and lessons learned across labs and CTF challenges — structured for fast recall mid-lab.</p><p class="meta">Stack: JavaScript, Knowledgebase, Static Site</p></div><div class="entry"><h3>XSS Bugs Lab <span class="url">github.com/bhaktabsharma/XSS-Bugs-Lab</span></h3><p>Deliberately vulnerable React, Vue, and Next.js environments for XSS practice, so each framework&#x27;s own quirks get proper attention.</p><p class="meta">Stack: React, Vue, Next.js, SQLite</p></div>
+  </section>
+
+  <section aria-labelledby="h-ach"><h2 id="h-ach">Practical achievements</h2>
+    <ul class="plain"><li>TryHackMe: Top 1% globally, 200+ rooms completed and a 250+ day streak (profile snapshot, last verified 11 Nov 2026).</li><li>TryHackMe learning paths completed: Jr Penetration Tester and SOC Level 1 (2024). In progress: Red Teaming and Cyber Defence.</li><li>Published 6 detailed CTF writeups (Blue, Internal Windows, Memory Forensics, Pickle Rick, PCAP Analysis, AD Penetration) and 12 TryHackMe room notes on the portfolio site.</li><li>Published 8 open-source security tools and practice labs on GitHub.</li></ul>
+  </section>
+
+  <section aria-labelledby="h-cert"><h2 id="h-cert">Certifications</h2>
+    <div class="entry"><h3>NVH Digital Forensic (3-month program), Grade A+</h3><p class="meta"><span class="org">NewVersionHacker</span> · Issued 8 June 2026 · valid till 9 June 2028 · Certificate no. CN-NVHDF26B07002AB</p></div><div class="entry"><h3>Ethical Hacking 101: Beginners Guide to Ethical Hacking</h3><p class="meta"><span class="org">Simplilearn SkillUP</span> · Issued 12 June 2026 · Certificate code 10338271</p></div><div class="entry"><h3>TryHackMe learning paths: Jr Penetration Tester, SOC Level 1</h3><p class="meta"><span class="org">TryHackMe</span> · 2024</p></div><div class="entry"><h3>Certified Ethical Hacker (CEH v12)</h3><p class="meta"><span class="org">EC-Council</span> · In progress, not yet earned</p></div><div class="entry"><h3>Computer Hacking Forensic Investigator (CHFI)</h3><p class="meta"><span class="org">EC-Council</span> · In progress, not yet earned</p></div>
+  </section>
+
+  <section aria-labelledby="h-lang"><h2 id="h-lang">Languages</h2><p>English (professional), Hindi (native), Nepali (native)</p></section>
+  <p class="updated">Updated November 2026. The same content is available as a PDF and as plain text.</p>
+</main>
+</body>
+</html>
