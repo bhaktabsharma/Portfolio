@@ -70,6 +70,78 @@ window.SITE = {
     "name": "Cyber Defence",
     "state": "wip"
    }
+  ],
+  "moreRooms": [
+   {
+    "path": "Jr Penetration Tester",
+    "rooms": [
+     "Offensive Security Intro",
+     "Defensive Security Intro",
+     "Careers in Cyber",
+     "Pentesting Fundamentals",
+     "Principles of Security",
+     "Walking An Application",
+     "Content Discovery",
+     "Subdomain Enumeration",
+     "Authentication Bypass",
+     "IDOR",
+     "File Inclusion",
+     "Intro to SSRF",
+     "Intro to Cross-site Scripting",
+     "Command Injection",
+     "SQL Injection",
+     "Burp Suite: The Basics",
+     "Burp Suite: Repeater",
+     "Burp Suite: Intruder",
+     "Passive Reconnaissance",
+     "Active Reconnaissance",
+     "Nmap Live Host Discovery",
+     "Nmap Basic Port Scans",
+     "Nmap Advanced Port Scans",
+     "Nmap Post Port Scans",
+     "Protocols and Servers",
+     "Protocols and Servers 2",
+     "Net Sec Challenge",
+     "Vulnerabilities 101",
+     "Exploit Vulnerabilities",
+     "Metasploit: Introduction",
+     "Metasploit: Exploitation",
+     "Metasploit: Meterpreter",
+     "What the Shell?",
+     "Windows PrivEsc"
+    ]
+   },
+   {
+    "path": "SOC Level 1",
+    "rooms": [
+     "Pyramid of Pain",
+     "Cyber Kill Chain",
+     "MITRE",
+     "Threat Intelligence Tools",
+     "Traffic Analysis Essentials",
+     "Snort",
+     "NetworkMiner",
+     "Zeek",
+     "Brim",
+     "Wireshark: The Basics",
+     "Wireshark: Packet Operations",
+     "Wireshark: Traffic Analysis",
+     "Core Windows Processes",
+     "Sysinternals",
+     "Windows Event Logs",
+     "Sysmon",
+     "Osquery: The Basics",
+     "Wazuh",
+     "Introduction to SIEM",
+     "Splunk: Basics",
+     "Investigating with ELK 101",
+     "Autopsy",
+     "Redline",
+     "Phishing Analysis Fundamentals",
+     "Phishing Emails in Action",
+     "The Greenholt Phish"
+    ]
+   }
   ]
  },
  "certs": [
@@ -1416,6 +1488,429 @@ window.SITE = {
      "type": "writeup",
      "id": "rm-mal",
      "label": "Malware Analysis (room)"
+    }
+   ]
+  },
+  "netcat": {
+   "name": "Netcat (nc)",
+   "cat": "Networking · Swiss-army utility",
+   "summary": "Netcat reads and writes data across TCP and UDP connections. In lab work it is used for banner grabbing, simple port checks, file transfer and catching reverse shells from machines you are authorised to test.",
+   "tags": [
+    "Networking",
+    "Banner Grabbing",
+    "Reverse Shell",
+    "File Transfer"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Banner grabbing</strong> — connect to a service and read the greeting it sends, which often reveals the software and version."
+    },
+    {
+     "desc": "<strong>Listeners</strong> — open a listening port to receive a connection from a lab machine."
+    },
+    {
+     "desc": "<strong>File transfer</strong> — move files between two hosts over a raw TCP connection when no other tool is available."
+    }
+   ],
+   "usage": {
+    "label": "terminal · netcat",
+    "code": "<span class=\"cmt\"># banner grab and quick port check against a lab target</span>\n<span class=\"cmd\">nc -nv 10.10.x.x 80</span>\n<span class=\"cmt\"># listen for a connection from a lab machine</span>\n<span class=\"cmd\">nc -lvnp 4444</span>"
+   },
+   "learned": [
+    "TryHackMe · Jr Penetration Tester path"
+   ],
+   "group": "Penetration Testing",
+   "docs": "https://nmap.org/ncat/",
+   "evidence": [
+    {
+     "type": "writeup",
+     "id": "invwin",
+     "label": "Internal Windows (writeup)"
+    }
+   ]
+  },
+  "searchsploit": {
+   "name": "Searchsploit (Exploit-DB)",
+   "cat": "Vulnerability Research · Exploit Database",
+   "summary": "Searchsploit is a command-line search tool for an offline copy of Exploit-DB. It helps match a service name and version to publicly documented exploits during vulnerability research.",
+   "tags": [
+    "Vulnerability Research",
+    "Exploit-DB",
+    "CVE",
+    "Enumeration"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Offline search</strong> — query the local Exploit-DB archive by product, version or CVE without internet access."
+    },
+    {
+     "desc": "<strong>Mirror (-m)</strong> — copy an exploit into the working directory so it can be read and adapted."
+    },
+    {
+     "desc": "<strong>Examine (-x)</strong> — read an exploit in the terminal to understand what it does before using it in a lab."
+    }
+   ],
+   "usage": {
+    "label": "terminal · searchsploit",
+    "code": "<span class=\"cmd\">searchsploit apache 2.4</span>\n<span class=\"cmt\"># copy an entry into the current folder to study it</span>\n<span class=\"cmd\">searchsploit -m &lt;EDB-ID&gt;</span>"
+   },
+   "learned": [
+    "TryHackMe · Jr Penetration Tester path"
+   ],
+   "group": "Penetration Testing",
+   "docs": "https://www.exploit-db.com/searchsploit",
+   "evidence": []
+  },
+  "linpeas": {
+   "name": "LinPEAS / WinPEAS",
+   "cat": "Privilege Escalation · Enumeration Scripts",
+   "summary": "LinPEAS and WinPEAS are enumeration scripts from the PEASS-ng project. They scan a Linux or Windows host for common privilege escalation paths and print the findings colour-coded by how interesting they are.",
+   "tags": [
+    "Privilege Escalation",
+    "Enumeration",
+    "Linux",
+    "Windows"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Misconfiguration checks</strong> — looks at SUID files, writable paths, scheduled jobs, services and stored credentials."
+    },
+    {
+     "desc": "<strong>Colour-coded output</strong> — highlights the most likely escalation vectors so they are easy to spot in long output."
+    },
+    {
+     "desc": "<strong>Linux and Windows</strong> — one script family for both operating systems."
+    }
+   ],
+   "usage": {
+    "label": "terminal · linpeas",
+    "code": "<span class=\"cmt\"># run on a lab machine you are authorised to test</span>\n<span class=\"cmd\">chmod +x linpeas.sh &amp;&amp; ./linpeas.sh</span>\n<span class=\"cmd\">.\\winPEASx64.exe</span>"
+   },
+   "learned": [
+    "TryHackMe · Jr Penetration Tester path"
+   ],
+   "group": "Penetration Testing",
+   "docs": "https://github.com/peass-ng/PEASS-ng",
+   "evidence": []
+  },
+  "ffuf": {
+   "name": "ffuf",
+   "cat": "Content Discovery · Web Fuzzer",
+   "summary": "ffuf (Fuzz Faster U Fool) is a fast web fuzzer written in Go. It replaces a FUZZ keyword in a URL, header or body with wordlist entries to discover hidden directories, files, subdomains and parameters.",
+   "tags": [
+    "Fuzzing",
+    "Content Discovery",
+    "Subdomains",
+    "Go"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Directory and file discovery</strong> — request many paths from a wordlist and keep the ones that respond."
+    },
+    {
+     "desc": "<strong>Virtual hosts and subdomains</strong> — fuzz the Host header to find sites that share one IP address."
+    },
+    {
+     "desc": "<strong>Filtering</strong> — match or filter by status code, size or word count to cut noise."
+    }
+   ],
+   "usage": {
+    "label": "terminal · ffuf",
+    "code": "<span class=\"cmd\">ffuf -u http://10.10.x.x/FUZZ -w wordlist.txt -mc 200,301</span>\n<span class=\"cmt\"># filter out a common response size</span>\n<span class=\"cmd\">ffuf -u http://10.10.x.x/FUZZ -w wordlist.txt -fs 4242</span>"
+   },
+   "learned": [
+    "TryHackMe · Jr Penetration Tester path"
+   ],
+   "group": "Web Application Security",
+   "docs": "https://github.com/ffuf/ffuf",
+   "evidence": [
+    {
+     "type": "project",
+     "id": "bbrecon",
+     "label": "Bug Bounty Recon Engine"
+    }
+   ]
+  },
+  "wappalyzer": {
+   "name": "Wappalyzer",
+   "cat": "Reconnaissance · Technology Fingerprinting",
+   "summary": "Wappalyzer is a browser extension and online service that identifies the technologies a website uses, such as web servers, frameworks, content management systems and libraries. It speeds up manual reconnaissance of a web target.",
+   "tags": [
+    "Reconnaissance",
+    "Fingerprinting",
+    "Web",
+    "Passive"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Technology detection</strong> — recognises frameworks, servers, CMS platforms and JavaScript libraries."
+    },
+    {
+     "desc": "<strong>Version hints</strong> — often shows a version number that can guide further research."
+    },
+    {
+     "desc": "<strong>Passive</strong> — works from what the browser already receives, with no extra scanning."
+    }
+   ],
+   "usage": {
+    "label": "browser · wappalyzer",
+    "code": "<span class=\"cmt\"># browser extension workflow</span>\n<span class=\"cmt\"># 1. open the authorised target in the browser</span>\n<span class=\"cmt\"># 2. click the Wappalyzer icon and note the detected technologies</span>"
+   },
+   "learned": [
+    "TryHackMe · Jr Penetration Tester path"
+   ],
+   "group": "Web Application Security",
+   "docs": "https://www.wappalyzer.com/",
+   "evidence": []
+  },
+  "zeek": {
+   "name": "Zeek",
+   "cat": "Network Monitoring · Traffic Analysis",
+   "summary": "Zeek is a network security monitor that turns captured traffic into structured logs such as conn.log, dns.log and http.log. Analysts search those logs instead of reading raw packets.",
+   "tags": [
+    "Network Monitoring",
+    "Traffic Analysis",
+    "Logs",
+    "PCAP"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Structured logs</strong> — one log per protocol, ready for filtering and correlation."
+    },
+    {
+     "desc": "<strong>PCAP analysis</strong> — process a saved capture offline to build the logs."
+    },
+    {
+     "desc": "<strong>Scripting</strong> — its own scripting language adds custom detections and fields."
+    }
+   ],
+   "usage": {
+    "label": "terminal · zeek",
+    "code": "<span class=\"cmd\">zeek -r capture.pcap</span>\n<span class=\"cmd\">cat conn.log | zeek-cut id.orig_h id.resp_h service</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Network Security",
+   "docs": "https://docs.zeek.org/",
+   "evidence": []
+  },
+  "networkminer": {
+   "name": "NetworkMiner",
+   "cat": "Network Forensics · PCAP Analyzer",
+   "summary": "NetworkMiner is a network forensic analysis tool. It parses PCAP files and rebuilds hosts, sessions, transferred files, credentials and DNS activity in a tabbed interface.",
+   "tags": [
+    "Network Forensics",
+    "PCAP",
+    "File Extraction",
+    "Hosts"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Host inventory</strong> — lists every host seen in the capture with operating system hints."
+    },
+    {
+     "desc": "<strong>File extraction</strong> — reassembles files that were transferred over the network."
+    },
+    {
+     "desc": "<strong>Parameters and credentials</strong> — surfaces form fields and credentials seen in clear text."
+    }
+   ],
+   "usage": {
+    "label": "desktop · networkminer",
+    "code": "<span class=\"cmt\"># GUI workflow</span>\n<span class=\"cmt\"># 1. File > Open the .pcap file</span>\n<span class=\"cmt\"># 2. review the Hosts, Files and DNS tabs</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Network Security",
+   "docs": "https://www.netresec.com/?page=NetworkMiner",
+   "evidence": []
+  },
+  "wazuh": {
+   "name": "Wazuh",
+   "cat": "Endpoint Security · SIEM and XDR",
+   "summary": "Wazuh is an open-source security platform for threat detection, integrity monitoring and incident response. Agents on endpoints send logs and alerts to a central manager and dashboard.",
+   "tags": [
+    "SIEM",
+    "XDR",
+    "Endpoint Monitoring",
+    "Detection"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Endpoint agents</strong> — collect logs and system data from monitored machines."
+    },
+    {
+     "desc": "<strong>Rules and alerts</strong> — rules decode events and raise alerts mapped to common attack techniques."
+    },
+    {
+     "desc": "<strong>File integrity monitoring</strong> — reports when watched files or registry keys change."
+    }
+   ],
+   "usage": {
+    "label": "terminal · wazuh",
+    "code": "<span class=\"cmt\"># list connected agents on the manager</span>\n<span class=\"cmd\">/var/ossec/bin/agent_control -l</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Network Security",
+   "docs": "https://documentation.wazuh.com/",
+   "evidence": []
+  },
+  "elk": {
+   "name": "Elastic Stack (ELK)",
+   "cat": "SIEM · Log Search and Visualisation",
+   "summary": "The Elastic Stack combines Elasticsearch for search, Logstash and Beats for ingestion, and Kibana for dashboards. Security teams use it to search and visualise log data during investigations.",
+   "tags": [
+    "SIEM",
+    "Log Analysis",
+    "Kibana",
+    "KQL"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Elasticsearch</strong> — stores and indexes logs so they can be searched quickly."
+    },
+    {
+     "desc": "<strong>Kibana Discover and KQL</strong> — filter events with the Kibana Query Language."
+    },
+    {
+     "desc": "<strong>Dashboards</strong> — visualise trends and spikes in activity."
+    }
+   ],
+   "usage": {
+    "label": "kibana · KQL",
+    "code": "<span class=\"cmt\"># failed Windows logons for one user</span>\n<span class=\"cmd\">event.code : 4625 and user.name : \"administrator\"</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Network Security",
+   "docs": "https://www.elastic.co/guide/index.html",
+   "evidence": []
+  },
+  "sysmon": {
+   "name": "Sysmon",
+   "cat": "Endpoint Monitoring · Windows Telemetry",
+   "summary": "Sysmon (System Monitor) is a Windows service from Sysinternals that logs process creation, network connections and file changes to the Windows event log. It gives analysts detailed endpoint telemetry.",
+   "tags": [
+    "Windows",
+    "Telemetry",
+    "Event Logs",
+    "Detection"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Process creation (Event ID 1)</strong> — records the command line and parent of every new process."
+    },
+    {
+     "desc": "<strong>Network connections (Event ID 3)</strong> — logs outbound connections by process."
+    },
+    {
+     "desc": "<strong>XML configuration</strong> — a config file controls which events are recorded."
+    }
+   ],
+   "usage": {
+    "label": "powershell · sysmon",
+    "code": "<span class=\"cmd\">sysmon64.exe -accepteula -i sysmonconfig.xml</span>\n<span class=\"cmt\"># view events in Event Viewer: Applications and Services Logs > Microsoft > Windows > Sysmon</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Digital Forensics",
+   "docs": "https://learn.microsoft.com/sysinternals/downloads/sysmon",
+   "evidence": [
+    {
+     "type": "writeup",
+     "id": "rm-soc",
+     "label": "SOC Level 1 (room)"
+    }
+   ]
+  },
+  "osquery": {
+   "name": "Osquery",
+   "cat": "Endpoint Visibility · SQL for Operating Systems",
+   "summary": "Osquery exposes an operating system as a relational database. Analysts write SQL queries to inspect processes, users, listening ports and startup items on an endpoint.",
+   "tags": [
+    "Endpoint",
+    "SQL",
+    "Threat Hunting",
+    "Visibility"
+   ],
+   "features": [
+    {
+     "desc": "<strong>SQL queries</strong> — ask questions about the machine with SELECT statements."
+    },
+    {
+     "desc": "<strong>Many tables</strong> — processes, users, open sockets, installed programs and more."
+    },
+    {
+     "desc": "<strong>Interactive shell</strong> — osqueryi gives quick answers during an investigation."
+    }
+   ],
+   "usage": {
+    "label": "osqueryi",
+    "code": "<span class=\"cmd\">SELECT pid, name, path FROM processes WHERE on_disk = 0;</span>\n<span class=\"cmd\">SELECT port, address FROM listening_ports;</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Digital Forensics",
+   "docs": "https://osquery.readthedocs.io/",
+   "evidence": []
+  },
+  "virustotal": {
+   "name": "VirusTotal",
+   "cat": "Threat Intelligence · File and URL Reputation",
+   "summary": "VirusTotal aggregates results from many antivirus engines and URL scanners. Analysts look up a file hash, URL or domain to check its reputation and related indicators without running anything.",
+   "tags": [
+    "Threat Intelligence",
+    "Hash Lookup",
+    "Reputation",
+    "IOC"
+   ],
+   "features": [
+    {
+     "desc": "<strong>Hash lookup</strong> — search a SHA-256 hash to see if a file has been analysed before."
+    },
+    {
+     "desc": "<strong>URL and domain checks</strong> — see how scanners rate a link or host."
+    },
+    {
+     "desc": "<strong>Relations</strong> — view related files, domains and IP addresses for an indicator."
+    }
+   ],
+   "usage": {
+    "label": "terminal · hash lookup",
+    "code": "<span class=\"cmd\">sha256sum sample.bin</span>\n<span class=\"cmt\"># paste the hash into the VirusTotal search box</span>"
+   },
+   "learned": [
+    "TryHackMe · SOC Level 1 path"
+   ],
+   "group": "Malware Analysis",
+   "docs": "https://docs.virustotal.com/",
+   "evidence": [
+    {
+     "type": "writeup",
+     "id": "rm-mal",
+     "label": "Malware Analysis (room)"
+    },
+    {
+     "type": "writeup",
+     "id": "rm-soc",
+     "label": "SOC Level 1 (room)"
+    },
+    {
+     "type": "writeup",
+     "id": "invwin",
+     "label": "Internal Windows (writeup)"
+    },
+    {
+     "type": "writeup",
+     "id": "pcap",
+     "label": "PCAP Analysis (writeup)"
     }
    ]
   }
