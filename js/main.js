@@ -198,7 +198,7 @@
         kv('role', 'aspiring penetration tester · cybersecurity researcher', 6),
         kv('focus', 'web app security · recon · bug bounty · forensics', 6),
         kv('study', 'B.Tech CSE at AGEMC (pursuing)', 6),
-        kv('base', 'Siliguri, West Bengal, India', 6),
+        kv('base', 'Alipurduar, West Bengal, India', 6),
         kv('status', 'working toward CEH v12 and CHFI · open to opportunities', 6),
       ] },
       skills: { lines: [
@@ -376,47 +376,6 @@
     }
   }
 
-  /* ----------------------------------------------------------- story */
-  const story = (() => {
-    const items = $$('.story__item');
-    if (!items.length) return { set() {} };
-    const dateEl = $('#storyDate');
-    const idxEl = $('#storyIdx');
-    const barEl = $('#storyBar');
-    const prev = $('#storyPrev');
-    const next = $('#storyNext');
-    $('#storyTotal').textContent = String(items.length).padStart(2, '0');
-    let active = -1;
-
-    function setActive(i) {
-      if (i === active) return;
-      active = i;
-      items.forEach((it, n) => it.classList.toggle('is-active', n === i));
-      idxEl.textContent = String(i + 1).padStart(2, '0');
-      barEl.style.setProperty('--p', ((i + 1) / items.length).toFixed(3));
-      prev.disabled = i === 0;
-      next.disabled = i === items.length - 1;
-      const text = items[i].dataset.when;
-      dateEl.textContent = '';
-      Array.from(text).forEach((ch, n) => {
-        const m = document.createElement('span');
-        m.className = 'dm';
-        const c = document.createElement('i');
-        c.textContent = ch;
-        c.style.setProperty('--i', n);
-        if (reduce) c.style.animation = 'none';
-        m.appendChild(c);
-        dateEl.appendChild(m);
-      });
-    }
-    const go = (i) => { const t = items[Math.max(0, Math.min(items.length - 1, i))]; t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); };
-    prev.addEventListener('click', () => go(active - 1));
-    next.addEventListener('click', () => go(active + 1));
-    items.forEach((it, i) => it.addEventListener('click', () => { if (i !== active) go(i); }));
-    setActive(0);
-    return { set: setActive };
-  })();
-
   /* ------------------------------------------------- data-driven sections */
   const fmtDate = (iso) => {
     try { return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso + 'T00:00:00')); } catch { return iso; }
@@ -455,6 +414,21 @@
     if (user && t.username) user.textContent = t.username;
     const link = $('.abcard__foot a.btn');
     if (link && t.profileUrl) link.href = t.profileUrl;
+  }
+
+  // extra TryHackMe rooms (from the completed paths) come from SITE.thm.moreRooms in js/content.js
+  function renderMoreRooms() {
+    const body = $('#moreRoomsBody');
+    const groups = SITE.thm && SITE.thm.moreRooms;
+    if (!body || !groups || !groups.length) { const d = $('#moreRooms'); if (d) d.hidden = true; return; }
+    let total = 0;
+    body.innerHTML = groups.map((g) => {
+      total += g.rooms.length;
+      return '<div class="rmore__group"><h4>' + esc(g.path) + ' <span>' + g.rooms.length + ' rooms</span></h4><ul class="rmore__list">' +
+        g.rooms.map((r) => '<li>' + esc(r) + '</li>').join('') + '</ul></div>';
+    }).join('');
+    const label = $('#moreRoomsLabel');
+    if (label) label.textContent = 'See ' + total + ' more rooms from my completed learning paths';
   }
 
   const CERT_STATE = { completed: ['done', 'Completed', 'stamp--done'], pursuing: ['wip', 'In progress', 'stamp--wip'], planned: ['wip', 'Planned', 'stamp--plan'] };
@@ -510,6 +484,7 @@
         '<span class="m-label">Where it appears in my work</span>' +
         (ev ? '<div class="m-evidence">' + ev + '</div><p class="m-note">Writeups, rooms and projects on this site that mention ' + esc(t.name) + '.</p>'
             : '<p class="m-note">No writeup or project on this site mentions ' + esc(t.name) + ' yet. It sits in my study toolkit.</p>') +
+        (t.learned && t.learned.length ? '<span class="m-label">Where I studied it</span><div class="m-evidence">' + t.learned.map((l) => '<span class="m-tag-static">' + esc(l) + '</span>').join('') + '</div>' : '') +
         '<span class="m-label">Usage example</span>' + code(t.usage) +
         '<div class="m-actions"><a class="btn btn--outline" href="' + esc(t.docs) + '" target="_blank" rel="noopener">Official documentation <span aria-hidden="true">↗</span></a></div>' };
     }
@@ -766,16 +741,13 @@
     const top = $('#totop');
     const nav = $('#nav');
     const par = $$('[data-parallax]').map((el) => ({ el, f: parseFloat(el.dataset.parallax), on: false }));
-    const storyItems = $$('.story__item');
     let ticking = false;
     let tops = [];          // cached page offsets, re-measured on resize / content changes
-    let storyTops = [];
     let docMax = 1;
 
     function measure() {
       const y = window.scrollY;
       tops = sectionEls.map((s) => ({ top: s.getBoundingClientRect().top + y, nav: NAV_MAP[s.id] }));
-      storyTops = storyItems.map((it) => it.getBoundingClientRect().top + y);
       docMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       moveIndicator();
     }
@@ -803,13 +775,6 @@
       for (let i = 0; i < tops.length; i++) if (tops[i].top <= probe) cur = tops[i].nav;
       setActiveNav(cur);
 
-      if (storyTops.length) {
-        const mid = y + window.innerHeight * 0.5;
-        let a = 0;
-        for (let i = 0; i < storyTops.length; i++) if (storyTops[i] < mid) a = i;
-        story.set(a);
-      }
-
       if (!reduce) {
         const vh = window.innerHeight;
         for (const rec of par) {
@@ -835,6 +800,7 @@
   /* ----------------------------------------------------------- start */
   applyStatuses();
   renderThm();
+  renderMoreRooms();
   renderCerts();
   runLoader();
   splitHeadings();
