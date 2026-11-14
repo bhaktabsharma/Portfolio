@@ -1,7 +1,7 @@
 BHAKTA SHARMA
 Aspiring Penetration Tester | Cybersecurity Researcher
 
-Siliguri, West Bengal, India | bhaktabsharma@gmail.com | bhaktabsharma.github.io/Portfolio | linkedin.com/in/bhaktabsharma | github.com/bhaktabsharma | tryhackme.com/p/bhaktabsharma
+Alipurduar, West Bengal, India | bhaktabsharma@gmail.com | bhaktabsharma.github.io/Portfolio | linkedin.com/in/bhaktabsharma | github.com/bhaktabsharma | tryhackme.com/p/bhaktabsharma
 
 PROFESSIONAL SUMMARY
 Computer Science and Engineering student and aspiring cybersecurity researcher focused on
@@ -20,16 +20,17 @@ Cybersecurity self-study, TryHackMe, EC-Council study material, NVH Digital Fore
 
 CYBERSECURITY SKILLS AND TOOLS
 - Web application security: Injection, XSS, access control and authentication flaws studied
--   in local labs. Burp Suite, OWASP ZAP, SQLMap, Nikto, Gobuster.
+-   in local labs. Burp Suite, OWASP ZAP, SQLMap, Nikto, Gobuster, ffuf, Wappalyzer.
 - Reconnaissance and enumeration: Subdomain, live host, port, URL, JavaScript endpoint and
 -   parameter discovery. Nmap, Recon-ng, Maltego, subfinder, httpx, katana, ffuf, nuclei.
 - Penetration testing (lab environments): Windows exploitation, Active Directory attacks and
 -   Linux privilege escalation on TryHackMe. Metasploit, Hydra, John the Ripper, Hashcat,
--   BloodHound, Mimikatz, Kali Linux.
+-   BloodHound, Mimikatz, Netcat, Searchsploit, LinPEAS and WinPEAS, Kali Linux.
 - Digital forensics: Evidence handling, memory, disk and network analysis. Autopsy,
--   Volatility 3, FTK Imager, Wireshark.
-- Malware analysis (static triage): Ghidra, YARA, pefile.
-- Network monitoring and defence: Wireshark, Snort, Splunk, Aircrack-ng.
+-   Volatility 3, FTK Imager, Wireshark, Sysmon, Osquery.
+- Malware analysis (static triage): Ghidra, YARA, pefile, VirusTotal.
+- Network monitoring and defence (SOC): Wireshark, Snort, Zeek, NetworkMiner, Splunk, Wazuh,
+-   Elastic Stack (ELK), Aircrack-ng.
 - Programming and automation: Python, Bash, JavaScript, TypeScript.
 Tools listed are those used or studied in labs, TryHackMe rooms and personal projects. No
 proficiency ratings are claimed.
@@ -88,6 +89,6 @@ Computer Hacking Forensic Investigator (CHFI)
   EC-Council | In progress, not yet earned
 
 LANGUAGES
-English (professional), Hindi (native), Nepali (native)
+English, Bengali, Hindi
 
 Updated November 2026
