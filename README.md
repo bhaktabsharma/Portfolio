@@ -20,10 +20,10 @@ The site is plain HTML, CSS and JavaScript. There is no framework, no build step
 
 - Editorial design in charcoal, warm ivory, muted gold and burgundy, with Onest for text and JetBrains Mono for labels and the terminal. Both fonts are self-hosted.
 - Hero with an interactive terminal identity card (`whoami`, `skills`, `projects`, `contact`, `help`, `clear`).
-- Five interactive expertise "doors", a scroll-driven timeline and an education and resume block.
-- Searchable tool catalogue: **26 tools** in six categories, each with a summary, the writeups and projects that mention it, and a link to its official documentation. No skill percentages.
+- Five interactive expertise "doors" and one compact **Education & journey** timeline with resume buttons (view, PDF, plain text).
+- Searchable tool catalogue: **38 tools** in six categories (including those from the Jr Penetration Tester and SOC Level 1 paths), each with a summary, the writeups and projects that mention it, and a link to its official documentation. No skill percentages.
 - **8 projects** with category filters, a featured Bug Bounty Recon Engine layout, status labels, GitHub buttons and live demo buttons where a demo exists.
-- **6 CTF writeups** and **12 TryHackMe room notes** shown in dialogs.
+- **6 CTF writeups** and **12 TryHackMe room notes** shown in dialogs, plus an expandable list of **60 more rooms** from the completed learning paths.
 - TryHackMe profile snapshot (manually maintained, with a visible "last verified" date).
 - Live GitHub repository section with language filters, a forks toggle, caching and a saved-snapshot fallback.
 - Certificate cards with previews of the original PDFs, view and download buttons.
@@ -118,7 +118,7 @@ All paths in the site are relative, so it works under the `/Portfolio/` sub-path
 - `demo`: add a URL to show a **Live demo** button.
 - `github`: repository URL.
 
-**TryHackMe statistics.** Edit `thm` in `js/content.js`: `stats`, `paths` and `lastVerified` (format `YYYY-MM-DD`). These are manual numbers, not live data, and the page says so. TryHackMe has no public API that this site uses.
+**TryHackMe statistics and rooms.** Edit `thm` in `js/content.js`: `stats`, `paths`, `lastVerified` (format `YYYY-MM-DD`) and `moreRooms` (the expandable room list, grouped by learning path). These are manual numbers, not live data, and the page says so. TryHackMe has no public API that this site uses.
 
 **Certificates.**
 1. Put the PDF in `assets/` (for example `assets/my-cert.pdf`).
@@ -128,7 +128,7 @@ All paths in the site are relative, so it works under the `/Portfolio/` sub-path
 
 **Resume.** Edit `resume.html` (and `assets/Bhakta-Sharma-Resume.txt` to match). To refresh the PDF open `resume.html`, choose Print, destination **Save as PDF**, A4, margins default, and replace `assets/Bhakta-Sharma-Resume.pdf`. Optional fields are marked with `EDIT:` comments, for example the expected graduation year and the diploma institution.
 
-**Tools.** Tool tiles are in `index.html`; their dialog content (summary, features, usage, documentation link) is in `js/content.js` under `tools`.
+**Tools.** Tool tiles are in `index.html`; their dialog content (summary, features, usage, documentation link, and the optional `learned` list) is in `js/content.js` under `tools`. To add a tool, copy an existing tile in `index.html`, change its `data-tool` id and text, and add a matching entry in `content.js`.
 
 ## Contact form
 
