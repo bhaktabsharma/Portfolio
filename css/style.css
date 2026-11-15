@@ -237,7 +237,7 @@ html.is-ready .hero__scroll[data-hero] { transform: translateX(-50%); }
 @keyframes blink { 50% { opacity: .2; } }
 .term__screen { position: relative; }
 .term__screen::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(180deg, rgba(255, 255, 255, .028) 0 1px, transparent 1px 3px); mix-blend-mode: screen; }
-.term__body { height: 15.5rem; overflow-y: auto; padding: 1rem 1.05rem; font: 400 .78rem/1.7 var(--mono); color: rgba(232, 228, 224, .86); scrollbar-width: thin; scrollbar-color: rgba(214, 178, 110, .35) transparent; overscroll-behavior: contain; }
+.term__body { height: 15.5rem; overflow-y: auto; padding: 1rem 1.05rem; font: 400 .78rem/1.7 var(--mono); color: rgba(232, 228, 224, .86); scrollbar-width: thin; scrollbar-color: rgba(214, 178, 110, .35) transparent; overscroll-behavior: auto; }
 .term__body .ln { display: block; white-space: pre-wrap; word-break: break-word; }
 .term__body .pr { color: var(--gold); }
 .term__body .kv { padding-left: calc(var(--w, 8ch) + 3ch); text-indent: calc(-1 * (var(--w, 8ch) + 3ch)); }
@@ -304,7 +304,7 @@ html.is-ready .hero__scroll[data-hero] { transform: translateX(-50%); }
 .door__leaf:hover .door__knob { transform: scale(1.15); }
 .door__room { position: absolute; inset: 0; z-index: 1; border-radius: inherit; background: linear-gradient(180deg, #F2EEE7 0%, #E2DDD4 100%); color: var(--charcoal); overflow: hidden; visibility: hidden; opacity: 0; transition: opacity .5s var(--ease), visibility 0s .9s; box-shadow: inset 0 18px 40px rgba(26, 24, 24, .12); --muted: rgba(26, 24, 24, .72); --line: rgba(26, 24, 24, .16); --accent: var(--gold-ink); --focus: var(--wine); }
 .door.is-open .door__room { visibility: visible; opacity: 1; transition: opacity .6s var(--ease) .45s, visibility 0s; }
-.door__roomin { position: relative; height: 100%; overflow-y: auto; padding: calc(var(--arch) * .85) clamp(1.2rem, 2.6vw, 2.2rem) 1.8rem; scrollbar-width: thin; scrollbar-color: rgba(26, 24, 24, .3) transparent; overscroll-behavior: contain; }
+.door__roomin { position: relative; height: 100%; overflow-y: auto; padding: calc(var(--arch) * .85) clamp(1.2rem, 2.6vw, 2.2rem) 1.8rem; scrollbar-width: thin; scrollbar-color: rgba(26, 24, 24, .3) transparent; overscroll-behavior: auto; }
 .door__ghost { position: absolute; right: 5.4rem; top: .9rem; width: 5.2rem; opacity: .1; pointer-events: none; }
 .door__close { position: absolute; top: 1.2rem; right: 1.2rem; z-index: 3; font: 500 .66rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: .5rem .8rem; border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, .5); transition: background-color .3s, color .3s; }
 .door__close:hover { background: var(--charcoal); color: var(--ivory); }
@@ -658,13 +658,16 @@ html.js .pcard.in .taxo i { animation: pop .7s var(--ease) both; animation-delay
   .repo__go { grid-column: 2; grid-row: 1 / span 1; justify-self: end; }
   .repo:hover { padding-left: 0; }
   /* doors become a swipeable wall */
-  .wall__track { width: 100%; max-width: none; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 var(--gutter); scroll-padding: 0 var(--gutter); scrollbar-width: none; height: 36rem; -webkit-overflow-scrolling: touch; }
+  .wall__track { width: 100%; max-width: none; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding: 0 var(--gutter); scroll-padding: 0 var(--gutter); scrollbar-width: none; height: 36rem; -webkit-overflow-scrolling: touch; }
   .wall__track::-webkit-scrollbar { display: none; }
   .door { flex: 0 0 min(68vw, 17rem); scroll-snap-align: center; transition: flex-basis .9s var(--ease-io); --arch: 3rem; }
   .door.is-open { flex: 0 0 min(88vw, 25rem); }
   .door__ghost { display: none; }
   .foot__inner { grid-template-columns: 1fr; }
   .foot__status { justify-content: flex-start; }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .wall__track { height: 42rem; }
 }
 @media (max-width: 640px) {
   .nav__actions .btn--ghost { display: none; }
